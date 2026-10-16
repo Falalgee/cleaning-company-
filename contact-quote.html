@@ -132,7 +132,6 @@
 </head>
 <body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
 
-  <!-- HEADER -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-on-surface/[0.06]">
     <div class="h-16 max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between gap-6">
       <a class="flex items-center gap-2.5 shrink-0 focus-ring rounded-md" data-path="home" href="#">
@@ -215,7 +214,7 @@
         </div>
       </section>
 
-      <!-- PRICING TIERS (moved from Home) -->
+      <!-- PRICING TIERS -->
       <section class="w-full border-t border-on-surface/[0.06]">
         <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
           <div class="reveal flex flex-col items-start gap-3 mb-12 max-w-[52ch]">
@@ -227,7 +226,6 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
 
-            <!-- Tier 1 -->
             <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden flex flex-col">
               <div class="p-6 sm:p-7 flex flex-col gap-5">
                 <div class="flex items-center justify-between">
@@ -257,7 +255,6 @@
               </div>
             </div>
 
-            <!-- Tier 2 Featured -->
             <div class="reveal relative bg-on-surface text-surface rounded-xl border border-on-surface overflow-hidden flex flex-col" style="transition-delay: 80ms;">
               <div class="absolute top-4 right-4 px-2 py-0.5 text-[10px] font-label-md uppercase tracking-wider text-surface bg-surface/15 rounded border border-surface/20 backdrop-blur-sm">
                 Most common
@@ -289,7 +286,6 @@
               </div>
             </div>
 
-            <!-- Tier 3 -->
             <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden flex flex-col" style="transition-delay: 160ms;">
               <div class="p-6 sm:p-7 flex flex-col gap-5">
                 <div class="flex items-center justify-between">
@@ -332,7 +328,6 @@
         <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 
-            <!-- FORM -->
             <div class="reveal lg:col-span-7 bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] p-6 sm:p-8 flex flex-col gap-6">
               <div class="flex flex-col gap-1.5 pb-4 border-b border-on-surface/[0.06]">
                 <h2 class="text-title-lg font-title-lg text-on-surface">Request a tailored quote</h2>
@@ -343,7 +338,6 @@
 
               <form class="flex flex-col gap-6" id="quoteCalculatorForm" onsubmit="event.preventDefault(); document.getElementById('successBanner').classList.remove('hidden');">
 
-                <!-- 01 Contact -->
                 <div class="flex flex-col gap-4">
                   <div class="flex items-center justify-between">
                     <span class="text-label-md font-label-md uppercase text-on-surface-variant">01 · Contact details</span>
@@ -367,7 +361,6 @@
                   </div>
                 </div>
 
-                <!-- 02 Scope -->
                 <div class="flex flex-col gap-4 pt-4 border-t border-on-surface/[0.06]">
                   <div class="flex items-center justify-between">
                     <span class="text-label-md font-label-md uppercase text-on-surface-variant">02 · Spatial scope</span>
@@ -464,7 +457,6 @@
                   </div>
                 </div>
 
-                <!-- Submit -->
                 <div class="flex flex-col gap-4 pt-4 border-t border-on-surface/[0.06]">
                   <button class="w-full inline-flex items-center justify-center gap-1.5 h-11 px-6 rounded-md bg-on-surface text-surface text-title-md font-title-md hover:bg-on-surface/90 transition-colors focus-ring" type="submit">
                     Request my free custom quote
@@ -489,10 +481,8 @@
               </form>
             </div>
 
-            <!-- LIVE ESTIMATOR + INFO -->
             <div class="lg:col-span-5 flex flex-col gap-5">
 
-              <!-- Live estimator -->
               <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden">
                 <div class="p-6 flex flex-col gap-5">
                   <div class="flex items-center justify-between">
@@ -535,7 +525,6 @@
                 </div>
               </div>
 
-              <!-- Fast facts -->
               <div class="reveal bg-surface-container-low rounded-xl border border-on-surface/[0.06] p-6 flex flex-col gap-4" style="transition-delay: 80ms;">
                 <span class="text-label-md font-label-md uppercase text-on-surface-variant">The Pristine standard</span>
 
@@ -570,7 +559,6 @@
                 </div>
               </div>
 
-              <!-- Direct comms -->
               <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] p-6 flex flex-col gap-5" style="transition-delay: 160ms;">
                 <h3 class="text-title-lg font-title-lg text-on-surface">Direct communication</h3>
 
@@ -674,7 +662,6 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
   <footer class="w-full border-t border-on-surface/[0.06]">
     <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -745,6 +732,20 @@
   <script>
     (function () {
       document.documentElement.classList.add('js-enabled');
+
+      // ---- ROUTER: convert data-path to real hrefs ----
+      var routes = {
+        'home': 'index.html',
+        'all-services': 'all-services.html',
+        'residential': 'residential.html',
+        'commercial': 'commercial.html',
+        'about-and-faqs': 'about-faqs.html',
+        'contact-and-quote': 'contact-quote.html'
+      };
+      document.querySelectorAll('[data-path]').forEach(function (el) {
+        var path = el.getAttribute('data-path');
+        if (routes[path]) el.setAttribute('href', routes[path]);
+      });
 
       // Scroll reveal
       var revealEls = document.querySelectorAll('.reveal');
@@ -889,4 +890,4 @@
     })();
   </script>
 </body>
-  </html>
+</html>
