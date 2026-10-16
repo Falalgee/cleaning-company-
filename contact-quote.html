@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>Contact &amp; Quote — Pristine Works</title>
+  <meta name="description" content="Get a free tailored quote. Tell us about your space and preferred cadence — we'll generate a clear, no-obligation estimate.">
+  <meta name="theme-color" content="#f8f9ff">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link crossorigin href="https://lh3.googleusercontent.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline-variant": "#c6c6cd", "on-primary-container": "#7c839b",
+            "on-primary-fixed-variant": "#3f465c", "on-tertiary-fixed-variant": "#005137",
+            "primary": "#000000", "on-surface-variant": "#45464d",
+            "surface-bright": "#f8f9ff", "inverse-surface": "#213145",
+            "inverse-on-surface": "#eaf1ff", "background": "#f8f9ff",
+            "on-error-container": "#93000a", "surface": "#f8f9ff",
+            "surface-container-low": "#eff4ff", "outline": "#76777d",
+            "surface-container-lowest": "#ffffff", "on-background": "#0b1c30",
+            "secondary-fixed": "#cce5ff", "on-secondary-container": "#00476e",
+            "secondary-fixed-dim": "#93ccff", "surface-tint": "#565e74",
+            "surface-container": "#e5eeff", "error-container": "#ffdad6",
+            "on-primary": "#ffffff", "on-secondary-fixed": "#001d31",
+            "secondary-container": "#5bb8fe", "surface-variant": "#d3e4fe",
+            "on-surface": "#0b1c30", "on-primary-fixed": "#131b2e",
+            "secondary": "#006398", "error": "#ba1a1a", "on-secondary": "#ffffff",
+            "primary-container": "#131b2e", "inverse-primary": "#bec6e0",
+            "primary-fixed-dim": "#bec6e0", "primary-fixed": "#dae2fd",
+            "tertiary": "#000000", "on-error": "#ffffff",
+            "tertiary-container": "#002114", "tertiary-fixed-dim": "#68dba9",
+            "on-tertiary-container": "#069669", "on-tertiary-fixed": "#002114",
+            "on-secondary-fixed-variant": "#004b73", "surface-container-high": "#dce9ff",
+            "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#85f8c4", "surface-container-highest": "#d3e4fe"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem", "sm": "0.375rem", "md": "0.5rem",
+            "lg": "0.75rem", "xl": "1rem", "2xl": "1.25rem", "full": "9999px"
+          },
+          boxShadow: {
+            "xs": "0 1px 2px 0 rgba(11,28,48,0.04)",
+            "sm": "0 1px 3px 0 rgba(11,28,48,0.06), 0 1px 2px -1px rgba(11,28,48,0.04)"
+          },
+          fontFamily: {
+            "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "headline-xl": ["44px", { lineHeight: "1.08", letterSpacing: "-0.03em", fontWeight: "600" }],
+            "headline-lg": ["32px", { lineHeight: "1.18", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "headline-md": ["22px", { lineHeight: "1.3", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "title-lg":    ["17px", { lineHeight: "1.4", letterSpacing: "-0.012em", fontWeight: "600" }],
+            "title-md":    ["14px", { lineHeight: "1.4", letterSpacing: "-0.005em", fontWeight: "600" }],
+            "body-lg":     ["16px", { lineHeight: "1.65", fontWeight: "400" }],
+            "body-md":     ["14px", { lineHeight: "1.6", fontWeight: "400" }],
+            "body-sm":     ["13px", { lineHeight: "1.55", fontWeight: "400" }],
+            "label-md":    ["11px", { lineHeight: "1.4", letterSpacing: "0.08em", fontWeight: "600" }],
+            "label-sm":    ["11px", { lineHeight: "1.4", letterSpacing: "0.02em", fontWeight: "500" }]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; scroll-padding-top: 5rem; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    ::selection { background: rgba(11,28,48,0.10); }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+      vertical-align: middle;
+    }
+
+    @keyframes pw-fade-up {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pw-pulse-dot {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.35; }
+    }
+
+    .js-enabled .reveal {
+      opacity: 0; transform: translateY(16px);
+      transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+    .js-enabled .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    .hero-enter { animation: pw-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    .hero-enter.d1 { animation-delay: 0.06s; }
+    .hero-enter.d2 { animation-delay: 0.12s; }
+
+    .pulse-dot { animation: pw-pulse-dot 2.4s ease-in-out infinite; }
+
+    .focus-ring:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px #f8f9ff, 0 0 0 4px rgba(11,28,48,0.25);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .js-enabled .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-on-surface/[0.06]">
+    <div class="h-16 max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between gap-6">
+      <a class="flex items-center gap-2.5 shrink-0 focus-ring rounded-md" data-path="home" href="#">
+        <img alt="Pristine Works" class="h-7 w-7 rounded-md object-contain" decoding="async" src="https://lh3.googleusercontent.com/aida/AEtjO1X7ReB7jhx-DtCL2RwaZmfEKGvt0mPsxHTKrXwYNYYTzCD7xit1G2UUOXPZryKnZ_gjVJLdLomipnc7P5scW4Fx64yplA0hjsRGN1AtP1qi5TZU0sZH_bW437-zWUUCvkPzVqg65Pk8BWaSkofO_PbW_Bl1xF-GkmKFm0NgZyNTNik6J7WS-pCqC-CD5RiKwd6np84CZg-XzfzqSPrhND3rl74z-tq0sXbBcp15FbzKEyWazeT-ZRYxvr5P">
+        <span class="text-[15px] font-semibold tracking-tight text-on-surface">Pristine Works</span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-0.5">
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="home" href="#">Home</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="all-services" href="#">All Services</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="residential" href="#">Residential</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="commercial" href="#">Commercial</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="about-and-faqs" href="#">About &amp; FAQs</a>
+        <a aria-current="page" class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface bg-surface-container-low" data-path="contact-and-quote" href="#">Contact &amp; Quote</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a class="hidden sm:flex items-center gap-1.5 text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface transition-colors focus-ring rounded-md px-2 py-1" href="tel:5550192834">
+          <span class="material-symbols-outlined text-[16px]">call</span>
+          <span class="tracking-tight tabular-nums">(555) 019-2834</span>
+        </a>
+        <a class="hidden md:inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-md bg-on-surface text-surface text-[13.5px] font-medium hover:bg-on-surface/90 transition-colors focus-ring" href="#quote-form">
+          <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+          <span>Get a Free Quote</span>
+        </a>
+        <button aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu" class="lg:hidden inline-flex items-center justify-center w-9 h-9 rounded-md border border-on-surface/[0.12] text-on-surface hover:bg-surface-container-low transition-colors focus-ring" id="mobile-menu-btn" type="button">
+          <span class="material-symbols-outlined text-[20px]" id="mobile-menu-icon">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="lg:hidden hidden border-t border-on-surface/[0.06] bg-surface/95 backdrop-blur-xl" id="mobile-nav">
+      <nav aria-label="Mobile" class="max-w-6xl mx-auto px-6 sm:px-8 py-4 flex flex-col gap-0.5">
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="home" href="#">Home</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="all-services" href="#">All Services</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="residential" href="#">Residential</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="commercial" href="#">Commercial</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="about-and-faqs" href="#">About &amp; FAQs</a>
+        <a aria-current="page" class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface bg-surface-container-low" data-path="contact-and-quote" href="#">Contact &amp; Quote</a>
+        <div class="mt-3 pt-3 border-t border-on-surface/[0.06] flex flex-col gap-2">
+          <a class="flex items-center gap-2 px-3 py-2 text-[14px] font-medium text-on-surface-variant tabular-nums" href="tel:5550192834">
+            <span class="material-symbols-outlined text-[16px]">call</span>
+            (555) 019-2834
+          </a>
+          <a class="inline-flex items-center justify-center h-10 px-4 rounded-md bg-on-surface text-surface text-[14px] font-medium hover:bg-on-surface/90 transition-colors" href="#quote-form">
+            Get a Free Quote
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]">
+    <div class="flex flex-col w-full">
+
+      <!-- PAGE INTRO -->
+      <section class="w-full max-w-6xl mx-auto px-6 sm:px-8 pt-12 sm:pt-16 pb-12">
+        <div class="hero-enter flex flex-col gap-5 max-w-[52ch]">
+          <h1 class="text-[32px] sm:text-[40px] lg:text-headline-xl font-headline-xl text-on-surface tracking-tight text-balance">
+            Get a free tailored quote.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant text-pretty">
+            Tell us about your space and preferred cadence. We'll generate a clear, no-obligation estimate tailored to your exact specifications.
+          </p>
+        </div>
+
+        <div class="hero-enter d1 flex flex-wrap items-center gap-x-6 gap-y-3 mt-10 pt-8 border-t border-on-surface/[0.08] text-body-sm font-body-sm">
+          <div class="flex items-center gap-2 text-on-surface">
+            <span class="material-symbols-outlined text-secondary text-[16px]">schedule</span>
+            Same-day estimate turnaround
+          </div>
+          <div class="flex items-center gap-2 text-on-surface">
+            <span class="material-symbols-outlined text-secondary text-[16px]">shield</span>
+            Vetted, background-screened crew
+          </div>
+          <div class="flex items-center gap-2 text-on-surface">
+            <span class="material-symbols-outlined text-secondary text-[16px]">lock</span>
+            No spam, no card required
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING TIERS (moved from Home) -->
+      <section class="w-full border-t border-on-surface/[0.06]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="reveal flex flex-col items-start gap-3 mb-12 max-w-[52ch]">
+            <h2 class="text-[26px] sm:text-headline-lg font-headline-lg text-on-surface tracking-tight">Transparent benchmark estimates</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+              Final estimates are calculated by exact square footage, room count, and current soil conditions during your intake form.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
+
+            <!-- Tier 1 -->
+            <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden flex flex-col">
+              <div class="p-6 sm:p-7 flex flex-col gap-5">
+                <div class="flex items-center justify-between">
+                  <span class="text-label-md font-label-md uppercase text-on-surface-variant">Apartment</span>
+                  <span class="px-2 py-0.5 text-[10px] font-label-md uppercase tracking-wider text-on-surface-variant bg-surface-container rounded border border-on-surface/[0.06]">Illustrative</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-title-lg font-title-lg text-on-surface">Studio / 1-Bedroom</h3>
+                  <p class="text-body-sm font-body-sm text-on-surface-variant">Up to 750 sq.ft · Bi-weekly cadence</p>
+                </div>
+                <div class="flex items-baseline gap-1.5 pt-2">
+                  <span class="text-label-sm font-label-sm text-on-surface-variant">from</span>
+                  <span class="text-[28px] font-headline-md text-on-surface font-semibold tabular-nums tracking-tight">$120</span>
+                  <span class="text-body-sm font-body-sm text-on-surface-variant">/ visit*</span>
+                </div>
+                <ul class="flex flex-col gap-2.5 text-body-sm font-body-sm text-on-surface pt-2 border-t border-on-surface/[0.06]">
+                  <li class="flex items-start gap-2 pt-4"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check</span> 1 kitchen · 1 bath · living &amp; bed</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check</span> Eco-friendly products included</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check</span> Est. 1.5 – 2.5 person-hours</li>
+                </ul>
+              </div>
+              <div class="p-6 sm:p-7 pt-0 mt-auto">
+                <a class="w-full inline-flex items-center justify-center gap-1.5 h-10 rounded-md bg-surface text-on-surface text-title-md font-title-md border border-on-surface/[0.12] hover:bg-surface-container-low hover:border-on-surface/[0.18] transition-colors focus-ring" href="#quote-form">
+                  Configure estimate
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Tier 2 Featured -->
+            <div class="reveal relative bg-on-surface text-surface rounded-xl border border-on-surface overflow-hidden flex flex-col" style="transition-delay: 80ms;">
+              <div class="absolute top-4 right-4 px-2 py-0.5 text-[10px] font-label-md uppercase tracking-wider text-surface bg-surface/15 rounded border border-surface/20 backdrop-blur-sm">
+                Most common
+              </div>
+              <div class="p-6 sm:p-7 flex flex-col gap-5">
+                <div class="flex items-center justify-between">
+                  <span class="text-label-md font-label-md uppercase text-surface/60">Single family</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-title-lg font-title-lg text-surface">2 – 3 Bedrooms</h3>
+                  <p class="text-body-sm font-body-sm text-surface/60">1,200 – 2,100 sq.ft · Bi-weekly cadence</p>
+                </div>
+                <div class="flex items-baseline gap-1.5 pt-2">
+                  <span class="text-label-sm font-label-sm text-surface/60">from</span>
+                  <span class="text-[28px] font-headline-md text-surface font-semibold tabular-nums tracking-tight">$180</span>
+                  <span class="text-body-sm font-body-sm text-surface/60">/ visit*</span>
+                </div>
+                <ul class="flex flex-col gap-2.5 text-body-sm font-body-sm text-surface/90 pt-2 border-t border-surface/10">
+                  <li class="flex items-start gap-2 pt-4"><span class="material-symbols-outlined text-[15px] text-secondary-container mt-0.5">check</span> Up to 2.5 baths + complete living zones</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-secondary-container mt-0.5">check</span> Full hard-floor wash &amp; bedroom dusting</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-secondary-container mt-0.5">check</span> Est. 3.0 – 4.5 person-hours</li>
+                </ul>
+              </div>
+              <div class="p-6 sm:p-7 pt-0 mt-auto">
+                <a class="w-full inline-flex items-center justify-center gap-1.5 h-10 rounded-md bg-surface text-on-surface text-title-md font-title-md hover:bg-surface-bright transition-colors focus-ring" href="#quote-form">
+                  Configure estimate
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden flex flex-col" style="transition-delay: 160ms;">
+              <div class="p-6 sm:p-7 flex flex-col gap-5">
+                <div class="flex items-center justify-between">
+                  <span class="text-label-md font-label-md uppercase text-on-surface-variant">Commercial</span>
+                  <span class="px-2 py-0.5 text-[10px] font-label-md uppercase tracking-wider text-on-surface-variant bg-surface-container rounded border border-on-surface/[0.06]">Illustrative</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-title-lg font-title-lg text-on-surface">Offices &amp; Retail</h3>
+                  <p class="text-body-sm font-body-sm text-on-surface-variant">Custom monthly SLA · foot-traffic tiers</p>
+                </div>
+                <div class="flex items-baseline gap-1.5 pt-2">
+                  <span class="text-label-sm font-label-sm text-on-surface-variant">from</span>
+                  <span class="text-[28px] font-headline-md text-on-surface font-semibold tabular-nums tracking-tight">$0.15</span>
+                  <span class="text-body-sm font-body-sm text-on-surface-variant">/ sq.ft*</span>
+                </div>
+                <ul class="flex flex-col gap-2.5 text-body-sm font-body-sm text-on-surface pt-2 border-t border-on-surface/[0.06]">
+                  <li class="flex items-start gap-2 pt-4"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check</span> Off-peak evening or early-morning service</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check</span> Trash, kitchen, &amp; conference rooms</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check</span> Direct facility account manager</li>
+                </ul>
+              </div>
+              <div class="p-6 sm:p-7 pt-0 mt-auto">
+                <a class="w-full inline-flex items-center justify-center gap-1.5 h-10 rounded-md bg-surface text-on-surface text-title-md font-title-md border border-on-surface/[0.12] hover:bg-surface-container-low hover:border-on-surface/[0.18] transition-colors focus-ring" href="#quote-form">
+                  Configure estimate
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="text-label-sm font-label-sm text-on-surface-variant text-center mt-8 max-w-[68ch] mx-auto">
+            * All pricing is sample &amp; illustrative for demonstration purposes. Pristine Works operates as an interactive concept showcase by Falalu Creative Studio. Final real-world fees depend on verified dimensions and specialty surface requirements.
+          </p>
+        </div>
+      </section>
+
+      <!-- QUOTE FORM + LIVE ESTIMATOR -->
+      <section class="w-full border-t border-on-surface/[0.06] bg-surface-container-low/40" id="quote-form">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+
+            <!-- FORM -->
+            <div class="reveal lg:col-span-7 bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] p-6 sm:p-8 flex flex-col gap-6">
+              <div class="flex flex-col gap-1.5 pb-4 border-b border-on-surface/[0.06]">
+                <h2 class="text-title-lg font-title-lg text-on-surface">Request a tailored quote</h2>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  Demo form — no data is submitted or stored. Use the estimator on the right to preview pricing.
+                </p>
+              </div>
+
+              <form class="flex flex-col gap-6" id="quoteCalculatorForm" onsubmit="event.preventDefault(); document.getElementById('successBanner').classList.remove('hidden');">
+
+                <!-- 01 Contact -->
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-center justify-between">
+                    <span class="text-label-md font-label-md uppercase text-on-surface-variant">01 · Contact details</span>
+                    <span class="text-label-sm font-label-sm text-on-surface-variant">Confidential</span>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex flex-col gap-2">
+                      <label class="text-title-md font-title-md text-on-surface" for="fullName">Full name</label>
+                      <input class="w-full h-10 px-3 rounded-md bg-surface text-on-surface text-body-md font-body-md border border-on-surface/[0.12] placeholder:text-on-surface-variant/50 outline-none transition-all focus:border-on-surface/30 focus:ring-2 focus:ring-on-surface/[0.08]" id="fullName" placeholder="Elena Vance" required type="text">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <label class="text-title-md font-title-md text-on-surface" for="workEmail">Email address</label>
+                      <input class="w-full h-10 px-3 rounded-md bg-surface text-on-surface text-body-md font-body-md border border-on-surface/[0.12] placeholder:text-on-surface-variant/50 outline-none transition-all focus:border-on-surface/30 focus:ring-2 focus:ring-on-surface/[0.08]" id="workEmail" placeholder="elena@studio.com" required type="email">
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                    <label class="text-title-md font-title-md text-on-surface" for="phone">Phone <span class="text-on-surface-variant font-normal">— optional</span></label>
+                    <input class="w-full h-10 px-3 rounded-md bg-surface text-on-surface text-body-md font-body-md border border-on-surface/[0.12] placeholder:text-on-surface-variant/50 outline-none transition-all focus:border-on-surface/30 focus:ring-2 focus:ring-on-surface/[0.08]" id="phone" placeholder="(555) 019-2834" type="tel">
+                  </div>
+                </div>
+
+                <!-- 02 Scope -->
+                <div class="flex flex-col gap-4 pt-4 border-t border-on-surface/[0.06]">
+                  <div class="flex items-center justify-between">
+                    <span class="text-label-md font-label-md uppercase text-on-surface-variant">02 · Spatial scope</span>
+                    <span class="text-label-sm font-label-sm text-on-surface-variant">Calibrated</span>
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                    <label class="text-title-md font-title-md text-on-surface" for="propertyType">Property classification</label>
+                    <div class="relative">
+                      <select class="w-full h-10 pl-3 pr-9 rounded-md bg-surface text-on-surface text-body-md font-body-md border border-on-surface/[0.12] outline-none transition-all focus:border-on-surface/30 focus:ring-2 focus:ring-on-surface/[0.08] appearance-none" id="propertyType">
+                        <option value="residential-apt">Residential apartment / condo</option>
+                        <option value="single-family">Single-family architectural residence</option>
+                        <option value="office">Office / commercial facility</option>
+                        <option value="retail">Retail storefront / gallery showroom</option>
+                        <option value="clinic">Medical / cleanroom clinic</option>
+                        <option value="multi-tenant">Common area / multi-tenant property</option>
+                      </select>
+                      <span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <label class="text-title-md font-title-md text-on-surface">Approximate footprint</label>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5" id="sizeSelectorContainer">
+                      <button class="size-btn px-3 py-3 rounded-md text-left bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col gap-0.5" data-base="145" data-sqft="850" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">Under 1,000</span>
+                        <span class="text-label-sm font-label-sm text-on-surface-variant">Compact / loft</span>
+                      </button>
+                      <button class="size-btn px-3 py-3 rounded-md text-left bg-surface-container-high border border-on-surface transition-colors flex flex-col gap-0.5" data-base="220" data-sqft="1500" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">1,000 – 1,999</span>
+                        <span class="text-label-sm font-label-sm text-on-surface-variant">Mid residence</span>
+                      </button>
+                      <button class="size-btn px-3 py-3 rounded-md text-left bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col gap-0.5" data-base="310" data-sqft="2750" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">2,000 – 3,499</span>
+                        <span class="text-label-sm font-label-sm text-on-surface-variant">Standard estate</span>
+                      </button>
+                      <button class="size-btn px-3 py-3 rounded-md text-left bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col gap-0.5" data-base="440" data-sqft="4200" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">3,500 – 4,999</span>
+                        <span class="text-label-sm font-label-sm text-on-surface-variant">Large scale</span>
+                      </button>
+                      <button class="size-btn col-span-2 sm:col-span-2 px-3 py-3 rounded-md text-left bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col gap-0.5" data-base="590" data-sqft="6500" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">5,000+ sq ft</span>
+                        <span class="text-label-sm font-label-sm text-on-surface-variant">Institutional / multi-floor complex</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                    <label class="text-title-md font-title-md text-on-surface" for="serviceType">Desired program</label>
+                    <div class="relative">
+                      <select class="w-full h-10 pl-3 pr-9 rounded-md bg-surface text-on-surface text-body-md font-body-md border border-on-surface/[0.12] outline-none transition-all focus:border-on-surface/30 focus:ring-2 focus:ring-on-surface/[0.08] appearance-none" id="serviceType">
+                        <option data-mult="1.0" value="recurring">Recurring scheduled maintenance</option>
+                        <option data-mult="1.45" value="deep">Deep clean restorative reset (+45%)</option>
+                        <option data-mult="1.3" value="turnover">Move-in / move-out turnover (+30%)</option>
+                        <option data-mult="1.15" value="commercial">Commercial &amp; workplace upkeep (+15%)</option>
+                        <option data-mult="1.6" value="postrenovation">Post-renovation particulate extraction (+60%)</option>
+                      </select>
+                      <span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <div class="flex items-center justify-between">
+                      <label class="text-title-md font-title-md text-on-surface">Service frequency</label>
+                      <span class="text-label-sm font-label-sm text-on-tertiary-container font-semibold">Volume savings applied</span>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="freqButtons">
+                      <button class="freq-btn px-3 py-3 rounded-md text-center bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col items-center gap-0.5" data-discount="1.0" data-freq="onetime" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">One-time</span>
+                        <span class="text-label-sm font-label-sm text-on-surface-variant">Standard</span>
+                      </button>
+                      <button class="freq-btn px-3 py-3 rounded-md text-center bg-surface-container-high border border-on-surface transition-colors flex flex-col items-center gap-0.5" data-discount="0.80" data-freq="weekly" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">Weekly</span>
+                        <span class="text-label-sm font-label-sm text-on-tertiary-container font-semibold">Save 20%*</span>
+                      </button>
+                      <button class="freq-btn px-3 py-3 rounded-md text-center bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col items-center gap-0.5" data-discount="0.85" data-freq="biweekly" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">Bi-weekly</span>
+                        <span class="text-label-sm font-label-sm text-on-tertiary-container font-semibold">Save 15%*</span>
+                      </button>
+                      <button class="freq-btn px-3 py-3 rounded-md text-center bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col items-center gap-0.5" data-discount="0.90" data-freq="monthly" type="button">
+                        <span class="text-title-md font-title-md text-on-surface">Monthly</span>
+                        <span class="text-label-sm font-label-sm text-on-tertiary-container font-semibold">Save 10%*</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-between">
+                      <label class="text-title-md font-title-md text-on-surface" for="customNotes">
+                        Specific requests <span class="text-on-surface-variant font-normal">— optional</span>
+                      </label>
+                    </div>
+                    <textarea class="w-full px-3 py-2.5 rounded-md bg-surface text-on-surface text-body-md font-body-md border border-on-surface/[0.12] placeholder:text-on-surface-variant/50 outline-none transition-all focus:border-on-surface/30 focus:ring-2 focus:ring-on-surface/[0.08] resize-none" id="customNotes" placeholder="E.g., natural marble requiring neutral pH agents, pet protocols, keyless lockbox code, preferred morning 8 AM window…" rows="3"></textarea>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="flex flex-col gap-4 pt-4 border-t border-on-surface/[0.06]">
+                  <button class="w-full inline-flex items-center justify-center gap-1.5 h-11 px-6 rounded-md bg-on-surface text-surface text-title-md font-title-md hover:bg-on-surface/90 transition-colors focus-ring" type="submit">
+                    Request my free custom quote
+                    <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                  </button>
+                  <div class="flex items-center justify-center gap-2 text-on-surface-variant">
+                    <span class="material-symbols-outlined text-on-tertiary-container text-[16px]">verified_user</span>
+                    <p class="text-label-sm font-label-sm">
+                      Demo form — no data is sent. No spam, no card required.
+                    </p>
+                  </div>
+
+                  <div class="hidden p-4 rounded-lg bg-surface-container border border-on-surface/[0.06] flex items-start gap-3" id="successBanner" role="status">
+                    <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+                    <div class="flex flex-col gap-0.5">
+                      <span class="text-title-md font-title-md text-on-surface">Sample intake submitted</span>
+                      <span class="text-body-sm font-body-sm text-on-surface-variant">In the live product, our team would review your spatial scope and dispatch a formal schedule and breakdown to your email.</span>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+            <!-- LIVE ESTIMATOR + INFO -->
+            <div class="lg:col-span-5 flex flex-col gap-5">
+
+              <!-- Live estimator -->
+              <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden">
+                <div class="p-6 flex flex-col gap-5">
+                  <div class="flex items-center justify-between">
+                    <span class="text-label-md font-label-md uppercase text-on-surface-variant">Live scope estimator</span>
+                    <span class="px-2 py-0.5 rounded text-on-surface-variant bg-surface-container text-label-sm font-label-sm">Ballpark</span>
+                  </div>
+
+                  <div class="flex flex-col gap-1">
+                    <span class="text-label-sm font-label-sm text-on-surface-variant">Estimated investment</span>
+                    <div class="flex items-baseline gap-2">
+                      <span class="text-[40px] font-headline-xl text-on-surface font-semibold tabular-nums tracking-tight" id="computedEstimate">$176</span>
+                      <span class="text-body-sm font-body-sm text-on-surface-variant" id="billingCadenceLabel">/ per weekly visit</span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-2.5 text-body-sm font-body-sm pt-5 border-t border-on-surface/[0.06]">
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Approximate area</span>
+                      <span class="text-on-surface font-medium tabular-nums" id="metricFootage">1,500 sq ft</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Est. crew hours</span>
+                      <span class="text-on-surface font-medium tabular-nums" id="metricCrewHours">3.0 – 3.5 hrs</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Calculated frequency</span>
+                      <span class="text-secondary font-medium" id="metricFrequency">Weekly (20% off)</span>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-2 pt-5 border-t border-on-surface/[0.06]">
+                    <div class="flex justify-between items-center">
+                      <span class="text-label-sm font-label-sm text-on-surface-variant">Scope estimation confidence</span>
+                      <span class="text-label-sm font-label-sm text-secondary font-semibold tabular-nums">94%</span>
+                    </div>
+                    <div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+                      <div class="bg-secondary h-full rounded-full" style="width: 94%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fast facts -->
+              <div class="reveal bg-surface-container-low rounded-xl border border-on-surface/[0.06] p-6 flex flex-col gap-4" style="transition-delay: 80ms;">
+                <span class="text-label-md font-label-md uppercase text-on-surface-variant">The Pristine standard</span>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-md bg-surface-container-lowest flex items-center justify-center shrink-0 text-secondary">
+                    <span class="material-symbols-outlined text-[16px]">timer</span>
+                  </div>
+                  <div class="flex flex-col gap-0.5">
+                    <h4 class="text-title-md font-title-md text-on-surface">Same-day quote turnaround</h4>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">Formal breakdowns delivered within 4 business hours.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-md bg-surface-container-lowest flex items-center justify-center shrink-0 text-secondary">
+                    <span class="material-symbols-outlined text-[16px]">checklist_rtl</span>
+                  </div>
+                  <div class="flex flex-col gap-0.5">
+                    <h4 class="text-title-md font-title-md text-on-surface">Customized property protocols</h4>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">Tailored checklists mapped to your surface materials and air quality needs.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-md bg-surface-container-lowest flex items-center justify-center shrink-0 text-secondary">
+                    <span class="material-symbols-outlined text-[16px]">sanitizer</span>
+                  </div>
+                  <div class="flex flex-col gap-0.5">
+                    <h4 class="text-title-md font-title-md text-on-surface">All supplies &amp; equipment included</h4>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">Hospital-grade HEPA filtration and non-toxic enzymatic agents provided.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct comms -->
+              <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] p-6 flex flex-col gap-5" style="transition-delay: 160ms;">
+                <h3 class="text-title-lg font-title-lg text-on-surface">Direct communication</h3>
+
+                <div class="flex flex-col gap-4 text-body-sm font-body-sm">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[18px]">call</span>
+                    <div class="flex flex-col">
+                      <span class="text-label-sm font-label-sm text-on-surface-variant">Phone inquiries</span>
+                      <span class="text-title-md font-title-md text-on-surface tabular-nums">(555) 019-2834</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[18px]">mail</span>
+                    <div class="flex flex-col">
+                      <span class="text-label-sm font-label-sm text-on-surface-variant">Electronic mail</span>
+                      <span class="text-title-md font-title-md text-on-surface">hello@pristineworks-demo.com</span>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">apartment</span>
+                    <div class="flex flex-col">
+                      <span class="text-label-sm font-label-sm text-on-surface-variant">Headquarters</span>
+                      <span class="text-body-sm font-body-sm text-on-surface">100 Cleanworks Blvd, Suite 400<br>Metro City</span>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">schedule</span>
+                    <div class="flex flex-col">
+                      <span class="text-label-sm font-label-sm text-on-surface-variant">Operating hours</span>
+                      <span class="text-body-sm font-body-sm text-on-surface">Mon – Sat · 7:00 AM – 7:00 PM<br><span class="text-on-surface-variant">Sun: emergency commercial facilities only</span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-3 bg-surface-container rounded-md border border-on-surface/[0.06]">
+                  <p class="text-label-sm font-label-sm text-on-surface-variant text-pretty">
+                    All pricing and terms shown on this platform are sample and illustrative. Demo project by Falalu Creative Studio.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTEXT IMAGES -->
+      <section class="w-full border-t border-on-surface/[0.06]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="reveal flex flex-col items-start gap-3 mb-10 max-w-[46ch]">
+            <h2 class="text-[24px] sm:text-[28px] font-headline-md text-on-surface tracking-tight">Where we work</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+              Residential sanctuaries and commercial workspaces across Metro City and the coastal suburbs.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="reveal relative aspect-[4/3] rounded-xl overflow-hidden border border-on-surface/[0.06] group">
+              <img alt="Impeccably clean, sun-drenched modern architectural living room with minimalist concrete surfaces, warm oak flooring, and crisp floor-to-ceiling windows overlooking a lush garden. Editorial architectural photography with soft morning light." class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsn2-gqz9aL0lW3f6KcVoXTBwp22EWkjEcYVPNf0YxZ0iT8uSkBwsJ7cEWbaGnUq4DFBr_PhRhzn7_ZIiLEvCwfkdmgKz6CJa62Q7IKRAgPH7FZkwZcYjffxnAbHOUVzWxlR6ivJF7MjOzVrviAXys12CXH-8tvlT3x-vwKZcx9zFuhbNlTN75hWcI5qHpvYLl55aKCuXae1AJ4xcj959B8RLFQXvV9db6hF4HwSsYm7OFVHUVz21b_g">
+            </div>
+            <div class="reveal relative aspect-[4/3] rounded-xl overflow-hidden border border-on-surface/[0.06] group" style="transition-delay: 80ms;">
+              <img alt="High-end corporate design studio interior featuring polished terrazzo flooring, modular acoustic felt partitions, pristine glass meeting rooms, and organized designer desks with no clutter. Clean daylight filtering through skylights." class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4XgTZJIZqjE80KWAxodvpD6tOrRoHcBxtBvzqtzzIHDr4GWdKZRLuzbv-RYGVnxTeYTtZxqsm-vJkGhxkgsHkD-ek3Py8R2AKbPuQln_MrOunADM64Uy1Nidg7rB7QuaDAv-zHWsRKzqotyR7dHO4aRSD1biQmu4f6w9xAXXwdnAt7_ndBktoSDj5LwSgkNonyA3MSe1S5MTB64afXhBrFReDEW0ey1uOSVO8V7IDhaCB7zeDb93vPQ">
+            </div>
+            <div class="reveal relative aspect-[4/3] rounded-xl overflow-hidden border border-on-surface/[0.06] bg-surface-container flex flex-col items-center justify-center text-center gap-2 p-6" style="transition-delay: 160ms;">
+              <span class="material-symbols-outlined text-secondary text-[28px]">location_on</span>
+              <span class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant">Coverage map</span>
+              <span class="text-title-lg font-title-lg text-on-surface">Metro City &amp; Coastal Suburbs</span>
+              <span class="text-body-sm font-body-sm text-on-surface-variant text-pretty max-w-[28ch]">
+                100 Cleanworks Blvd, Suite 400 · Metro City
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BAND -->
+      <section class="w-full border-t border-on-surface/[0.06] bg-surface-container-low/50">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
+          <div class="reveal flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+            <div class="flex flex-col gap-3 max-w-[52ch]">
+              <h2 class="text-[24px] sm:text-[28px] font-headline-md text-on-surface tracking-tight text-balance">
+                Prefer to talk it through?
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+                Our operations coordinator is available Mon – Sat · 7 AM – 7 PM for scheduling, scope, and customized checklists.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 shrink-0">
+              <a class="inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-md bg-on-surface text-surface text-title-md font-title-md hover:bg-on-surface/90 transition-colors focus-ring" href="tel:5550192834">
+                <span class="material-symbols-outlined text-[16px]">call</span>
+                Call operations
+              </a>
+              <a class="inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-md bg-surface text-on-surface text-title-md font-title-md border border-on-surface/[0.12] hover:bg-surface-container-low hover:border-on-surface/[0.18] transition-colors focus-ring" data-path="about-and-faqs" href="#">
+                View quality standards
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full border-t border-on-surface/[0.06]">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2.5">
+            <img alt="Pristine Works Logo" class="h-7 w-7 rounded-md object-contain" loading="lazy" decoding="async" src="https://lh3.googleusercontent.com/aida/AEtjO1X7ReB7jhx-DtCL2RwaZmfEKGvt0mPsxHTKrXwYNYYTzCD7xit1G2UUOXPZryKnZ_gjVJLdLomipnc7P5scW4Fx64yplA0hjsRGN1AtP1qi5TZU0sZH_bW437-zWUUCvkPzVqg65Pk8BWaSkofO_PbW_Bl1xF-GkmKFm0NgZyNTNik6J7WS-pCqC-CD5RiKwd6np84CZg-XzfzqSPrhND3rl74z-tq0sXbBcp15FbzKEyWazeT-ZRYxvr5P">
+            <span class="text-title-md font-title-md text-on-surface">Pristine Works</span>
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty max-w-[42ch]">Architectural-grade cleaning precision creating calm, orderly, and hygienic environments for residences and corporate facilities.</p>
+          <span class="text-label-sm font-label-sm text-on-surface-variant/70">A demo by Falalu Creative Studio. Fictional business concept.</span>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Services</h4>
+          <div class="flex flex-col gap-2.5">
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Recurring home</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Deep clean</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Move in / move out</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="commercial" href="#">Office facilities</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="commercial" href="#">Retail &amp; showrooms</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Resources</h4>
+          <div class="flex flex-col gap-2.5">
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="all-services" href="#">Preparation checklist</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="about-and-faqs" href="#">Our process</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="contact-and-quote" href="#">Sample rates &amp; tiers</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="about-and-faqs" href="#">Frequently asked questions</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Contact</h4>
+          <div class="flex flex-col gap-3 text-body-sm font-body-sm">
+            <div class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px] mt-0.5">location_on</span>
+              <span class="text-on-surface-variant">100 Cleanworks Blvd, Suite 400, Metro City</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">mail</span>
+              <span class="text-on-surface-variant">hello@pristineworks-demo.com</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">call</span>
+              <span class="text-on-surface-variant tabular-nums">(555) 019-2834</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">schedule</span>
+              <span class="text-on-surface-variant">Mon – Sat · 7:00 AM – 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-14 pt-6 border-t border-on-surface/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <p class="text-label-sm font-label-sm text-on-surface-variant">© 2025 Pristine Works. Sample pricing and details are illustrative. Demo project by Falalu Creative Studio.</p>
+        <div class="flex items-center gap-6 text-label-sm font-label-sm text-on-surface-variant">
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Privacy policy</a>
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Terms of service</a>
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Hygiene standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js-enabled');
+
+      // Scroll reveal
+      var revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.10, rootMargin: '0px 0px -60px 0px' });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+
+      // Mobile menu
+      var btn = document.getElementById('mobile-menu-btn');
+      var panel = document.getElementById('mobile-nav');
+      var icon = document.getElementById('mobile-menu-icon');
+      if (btn && panel) {
+        var closeMenu = function () {
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open menu');
+          if (icon) icon.textContent = 'menu';
+        };
+        var openMenu = function () {
+          panel.classList.remove('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.setAttribute('aria-label', 'Close menu');
+          if (icon) icon.textContent = 'close';
+        };
+        btn.addEventListener('click', function () {
+          if (panel.classList.contains('hidden')) openMenu();
+          else closeMenu();
+        });
+        panel.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', closeMenu);
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeMenu();
+        });
+        window.addEventListener('resize', function () {
+          if (window.innerWidth >= 1024) closeMenu();
+        });
+      }
+    })();
+
+    // Live quote engine
+    (function initQuoteEngine() {
+      var currentBasePrice = 220;
+      var currentSqftLabel = '1,000 – 1,999 sq ft';
+      var currentServiceMult = 1.0;
+      var currentFreqDiscount = 0.80;
+      var currentCadenceText = '/ per weekly visit';
+      var currentFreqLabel = 'Weekly (20% off)';
+
+      var sizeButtons = document.querySelectorAll('#sizeSelectorContainer .size-btn');
+      var freqButtons = document.querySelectorAll('#freqButtons .freq-btn');
+      var serviceSelect = document.getElementById('serviceType');
+
+      var computedElem = document.getElementById('computedEstimate');
+      var billingCadenceElem = document.getElementById('billingCadenceLabel');
+      var metricFootageElem = document.getElementById('metricFootage');
+      var metricCrewHoursElem = document.getElementById('metricCrewHours');
+      var metricFreqElem = document.getElementById('metricFrequency');
+
+      var sizeActiveCls = 'size-btn px-3 py-3 rounded-md text-left bg-surface-container-high border border-on-surface transition-colors flex flex-col gap-0.5';
+      var sizeInactiveCls = 'size-btn px-3 py-3 rounded-md text-left bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col gap-0.5';
+      var sizeActiveMultiCls = 'size-btn col-span-2 sm:col-span-2 px-3 py-3 rounded-md text-left bg-surface-container-high border border-on-surface transition-colors flex flex-col gap-0.5';
+      var sizeInactiveMultiCls = 'size-btn col-span-2 sm:col-span-2 px-3 py-3 rounded-md text-left bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col gap-0.5';
+
+      var freqActiveCls = 'freq-btn px-3 py-3 rounded-md text-center bg-surface-container-high border border-on-surface transition-colors flex flex-col items-center gap-0.5';
+      var freqInactiveCls = 'freq-btn px-3 py-3 rounded-md text-center bg-surface border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors flex flex-col items-center gap-0.5';
+
+      function recalculate() {
+        var calculated = Math.round(currentBasePrice * currentServiceMult * currentFreqDiscount);
+        computedElem.textContent = '$' + calculated;
+        billingCadenceElem.textContent = currentCadenceText;
+        metricFootageElem.textContent = currentSqftLabel;
+        metricFreqElem.textContent = currentFreqLabel;
+
+        var hours = '2.5 – 3.0 hrs';
+        if (currentBasePrice <= 145) hours = '1.5 – 2.0 hrs';
+        else if (currentBasePrice === 220) hours = '3.0 – 3.5 hrs';
+        else if (currentBasePrice === 310) hours = '4.0 – 5.0 hrs';
+        else if (currentBasePrice === 440) hours = '5.5 – 6.5 hrs';
+        else if (currentBasePrice >= 590) hours = '7.0+ hrs (multi-crew)';
+        metricCrewHoursElem.textContent = hours;
+      }
+
+      sizeButtons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var isMulti = b.classList.contains('col-span-2');
+          sizeButtons.forEach(function (x) {
+            x.className = x.classList.contains('col-span-2') ? sizeInactiveMultiCls : sizeInactiveCls;
+          });
+          b.className = isMulti ? sizeActiveMultiCls : sizeActiveCls;
+
+          currentBasePrice = parseFloat(b.getAttribute('data-base')) || 220;
+          var title = b.querySelector('.text-title-md');
+          currentSqftLabel = title ? title.textContent + ' sq ft' : 'Custom';
+          recalculate();
+        });
+      });
+
+      freqButtons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          freqButtons.forEach(function (x) { x.className = freqInactiveCls; });
+          b.className = freqActiveCls;
+
+          currentFreqDiscount = parseFloat(b.getAttribute('data-discount')) || 1.0;
+          var key = b.getAttribute('data-freq');
+          if (key === 'onetime') {
+            currentCadenceText = '/ single complete service';
+            currentFreqLabel = 'One-time reset';
+          } else if (key === 'weekly') {
+            currentCadenceText = '/ per weekly visit';
+            currentFreqLabel = 'Weekly (20% off)';
+          } else if (key === 'biweekly') {
+            currentCadenceText = '/ per bi-weekly visit';
+            currentFreqLabel = 'Bi-weekly (15% off)';
+          } else if (key === 'monthly') {
+            currentCadenceText = '/ per monthly visit';
+            currentFreqLabel = 'Monthly (10% off)';
+          }
+          recalculate();
+        });
+      });
+
+      if (serviceSelect) {
+        serviceSelect.addEventListener('change', function () {
+          var selected = serviceSelect.options[serviceSelect.selectedIndex];
+          currentServiceMult = parseFloat(selected.getAttribute('data-mult')) || 1.0;
+          recalculate();
+        });
+      }
+
+      recalculate();
+    })();
+  </script>
+</body>
+  </html>
