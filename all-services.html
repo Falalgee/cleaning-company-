@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>All Services — Pristine Works</title>
+  <meta name="description" content="Precision cleaning programs built for exacting standards. Residential, commercial, and specialized scopes across five core tiers.">
+  <meta name="theme-color" content="#f8f9ff">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link crossorigin href="https://lh3.googleusercontent.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline-variant": "#c6c6cd", "on-primary-container": "#7c839b",
+            "on-primary-fixed-variant": "#3f465c", "on-tertiary-fixed-variant": "#005137",
+            "primary": "#000000", "on-surface-variant": "#45464d",
+            "surface-bright": "#f8f9ff", "inverse-surface": "#213145",
+            "inverse-on-surface": "#eaf1ff", "background": "#f8f9ff",
+            "on-error-container": "#93000a", "surface": "#f8f9ff",
+            "surface-container-low": "#eff4ff", "outline": "#76777d",
+            "surface-container-lowest": "#ffffff", "on-background": "#0b1c30",
+            "secondary-fixed": "#cce5ff", "on-secondary-container": "#00476e",
+            "secondary-fixed-dim": "#93ccff", "surface-tint": "#565e74",
+            "surface-container": "#e5eeff", "error-container": "#ffdad6",
+            "on-primary": "#ffffff", "on-secondary-fixed": "#001d31",
+            "secondary-container": "#5bb8fe", "surface-variant": "#d3e4fe",
+            "on-surface": "#0b1c30", "on-primary-fixed": "#131b2e",
+            "secondary": "#006398", "error": "#ba1a1a", "on-secondary": "#ffffff",
+            "primary-container": "#131b2e", "inverse-primary": "#bec6e0",
+            "primary-fixed-dim": "#bec6e0", "primary-fixed": "#dae2fd",
+            "tertiary": "#000000", "on-error": "#ffffff",
+            "tertiary-container": "#002114", "tertiary-fixed-dim": "#68dba9",
+            "on-tertiary-container": "#069669", "on-tertiary-fixed": "#002114",
+            "on-secondary-fixed-variant": "#004b73", "surface-container-high": "#dce9ff",
+            "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#85f8c4", "surface-container-highest": "#d3e4fe"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem", "sm": "0.375rem", "md": "0.5rem",
+            "lg": "0.75rem", "xl": "1rem", "2xl": "1.25rem", "full": "9999px"
+          },
+          boxShadow: {
+            "xs": "0 1px 2px 0 rgba(11,28,48,0.04)",
+            "sm": "0 1px 3px 0 rgba(11,28,48,0.06), 0 1px 2px -1px rgba(11,28,48,0.04)",
+            "md": "0 4px 12px -2px rgba(11,28,48,0.06), 0 2px 4px -2px rgba(11,28,48,0.04)",
+            "lg": "0 12px 32px -8px rgba(11,28,48,0.10), 0 4px 8px -4px rgba(11,28,48,0.05)",
+            "xl": "0 24px 48px -12px rgba(11,28,48,0.14), 0 8px 16px -8px rgba(11,28,48,0.06)"
+          },
+          spacing: {
+            "space-sm": "0.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem",
+            "gutter": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem",
+            "margin": "3rem", "space-lg": "1.5rem", "space-xl": "2.5rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "headline-xl": ["44px", { lineHeight: "1.08", letterSpacing: "-0.03em", fontWeight: "600" }],
+            "headline-lg": ["32px", { lineHeight: "1.18", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "headline-md": ["22px", { lineHeight: "1.3", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "title-lg":    ["17px", { lineHeight: "1.4", letterSpacing: "-0.012em", fontWeight: "600" }],
+            "title-md":    ["14px", { lineHeight: "1.4", letterSpacing: "-0.005em", fontWeight: "600" }],
+            "body-lg":     ["16px", { lineHeight: "1.65", fontWeight: "400" }],
+            "body-md":     ["14px", { lineHeight: "1.6", fontWeight: "400" }],
+            "body-sm":     ["13px", { lineHeight: "1.55", fontWeight: "400" }],
+            "label-md":    ["11px", { lineHeight: "1.4", letterSpacing: "0.08em", fontWeight: "600" }],
+            "label-sm":    ["11px", { lineHeight: "1.4", letterSpacing: "0.02em", fontWeight: "500" }]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; scroll-padding-top: 5rem; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    ::selection { background: rgba(11,28,48,0.10); }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+      vertical-align: middle;
+    }
+
+    @keyframes pw-fade-up {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pw-pulse-dot {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.35; }
+    }
+
+    .js-enabled .reveal {
+      opacity: 0; transform: translateY(16px);
+      transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+    .js-enabled .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    .hero-enter { animation: pw-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    .hero-enter.d1 { animation-delay: 0.06s; }
+    .hero-enter.d2 { animation-delay: 0.12s; }
+
+    .pulse-dot { animation: pw-pulse-dot 2.4s ease-in-out infinite; }
+
+    .focus-ring:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px #f8f9ff, 0 0 0 4px rgba(11,28,48,0.25);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .js-enabled .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-on-surface/[0.06]">
+    <div class="h-16 max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between gap-6">
+
+      <a class="flex items-center gap-2.5 shrink-0 focus-ring rounded-md" data-path="home" href="#">
+        <img alt="Pristine Works" class="h-7 w-7 rounded-md object-contain" decoding="async" src="https://lh3.googleusercontent.com/aida/AEtjO1X7ReB7jhx-DtCL2RwaZmfEKGvt0mPsxHTKrXwYNYYTzCD7xit1G2UUOXPZryKnZ_gjVJLdLomipnc7P5scW4Fx64yplA0hjsRGN1AtP1qi5TZU0sZH_bW437-zWUUCvkPzVqg65Pk8BWaSkofO_PbW_Bl1xF-GkmKFm0NgZyNTNik6J7WS-pCqC-CD5RiKwd6np84CZg-XzfzqSPrhND3rl74z-tq0sXbBcp15FbzKEyWazeT-ZRYxvr5P">
+        <span class="text-[15px] font-semibold tracking-tight text-on-surface">Pristine Works</span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-0.5">
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="home" href="#">Home</a>
+        <a aria-current="page" class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface bg-surface-container-low" data-path="all-services" href="#">All Services</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="residential" href="#">Residential</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="commercial" href="#">Commercial</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="about-and-faqs" href="#">About &amp; FAQs</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="contact-and-quote" href="#">Contact &amp; Quote</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a class="hidden sm:flex items-center gap-1.5 text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface transition-colors focus-ring rounded-md px-2 py-1" href="tel:5550192834">
+          <span class="material-symbols-outlined text-[16px]">call</span>
+          <span class="tracking-tight tabular-nums">(555) 019-2834</span>
+        </a>
+        <a class="hidden md:inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-md bg-on-surface text-surface text-[13.5px] font-medium hover:bg-on-surface/90 transition-colors focus-ring" data-path="contact-and-quote" href="#">
+          <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+          <span>Get a Free Quote</span>
+        </a>
+        <button aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu" class="lg:hidden inline-flex items-center justify-center w-9 h-9 rounded-md border border-on-surface/[0.12] text-on-surface hover:bg-surface-container-low transition-colors focus-ring" id="mobile-menu-btn" type="button">
+          <span class="material-symbols-outlined text-[20px]" id="mobile-menu-icon">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="lg:hidden hidden border-t border-on-surface/[0.06] bg-surface/95 backdrop-blur-xl" id="mobile-nav">
+      <nav aria-label="Mobile" class="max-w-6xl mx-auto px-6 sm:px-8 py-4 flex flex-col gap-0.5">
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="home" href="#">Home</a>
+        <a aria-current="page" class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface bg-surface-container-low" data-path="all-services" href="#">All Services</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="residential" href="#">Residential</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="commercial" href="#">Commercial</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="about-and-faqs" href="#">About &amp; FAQs</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="contact-and-quote" href="#">Contact &amp; Quote</a>
+        <div class="mt-3 pt-3 border-t border-on-surface/[0.06] flex flex-col gap-2">
+          <a class="flex items-center gap-2 px-3 py-2 text-[14px] font-medium text-on-surface-variant tabular-nums" href="tel:5550192834">
+            <span class="material-symbols-outlined text-[16px]">call</span>
+            (555) 019-2834
+          </a>
+          <a class="inline-flex items-center justify-center h-10 px-4 rounded-md bg-on-surface text-surface text-[14px] font-medium hover:bg-on-surface/90 transition-colors" data-path="contact-and-quote" href="#">
+            Get a Free Quote
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]">
+    <div class="flex flex-col w-full">
+
+      <!-- ============================================================
+           PAGE INTRO
+           ============================================================ -->
+      <section class="w-full max-w-6xl mx-auto px-6 sm:px-8 pt-12 sm:pt-16 pb-12">
+        <div class="hero-enter flex flex-col gap-5 max-w-[52ch]">
+          <h1 class="text-[32px] sm:text-[40px] lg:text-headline-xl font-headline-xl text-on-surface tracking-tight text-balance">
+            Precision cleaning programs for exacting standards.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant text-pretty">
+            Five core scopes across residential, commercial, and transitional care. Every tier executes against an immutable sequence of sanitization stages — with custom modifications specifiable during the quote request.
+          </p>
+        </div>
+
+        <div class="hero-enter d1 flex flex-wrap items-center gap-x-8 gap-y-4 mt-10 pt-8 border-t border-on-surface/[0.08]">
+          <div class="flex flex-col gap-1">
+            <span class="text-title-md font-title-md text-on-surface tabular-nums">100%</span>
+            <span class="text-label-sm font-label-sm text-on-surface-variant">Checklist accuracy</span>
+          </div>
+          <div class="w-px h-10 bg-on-surface/[0.08] hidden sm:block"></div>
+          <div class="flex flex-col gap-1">
+            <span class="text-title-md font-title-md text-on-surface tabular-nums">0.05µ</span>
+            <span class="text-label-sm font-label-sm text-on-surface-variant">HEPA filtration spec</span>
+          </div>
+          <div class="w-px h-10 bg-on-surface/[0.08] hidden sm:block"></div>
+          <div class="flex flex-col gap-1">
+            <span class="text-title-md font-title-md text-on-surface">5 tiers</span>
+            <span class="text-label-sm font-label-sm text-on-surface-variant">Residential → commercial</span>
+          </div>
+          <div class="w-px h-10 bg-on-surface/[0.08] hidden sm:block"></div>
+          <div class="flex flex-col gap-1">
+            <span class="text-title-md font-title-md text-on-surface inline-flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container pulse-dot"></span>
+              Accepting contracts
+            </span>
+            <span class="text-label-sm font-label-sm text-on-surface-variant">Residential &amp; commercial</span>
+          </div>
+        </div>
+
+        <!-- Category chips -->
+        <div class="hero-enter d2 flex flex-wrap items-center gap-2 mt-8">
+          <span class="text-label-sm font-label-sm text-on-surface-variant mr-1">Jump to:</span>
+          <a class="px-3 py-1.5 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors border border-on-surface/[0.06]" href="#scope-matrix">Scope matrix</a>
+          <a class="px-3 py-1.5 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors border border-on-surface/[0.06]" href="#add-ons">Add-ons</a>
+          <a class="px-3 py-1.5 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors border border-on-surface/[0.06]" href="#estimator">Estimator</a>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SERVICE CATALOG
+           ============================================================ -->
+      <section class="w-full border-t border-on-surface/[0.06]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <h2 class="text-[26px] sm:text-headline-lg font-headline-lg text-on-surface tracking-tight max-w-[20ch] text-balance">
+              Detailed operational scopes
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-[46ch] text-pretty">
+              Every service runs an immutable sanitization sequence. Custom modifications are specified during your intake.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- 01 · Recurring Residential -->
+            <article class="reveal group flex flex-col bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden">
+              <div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+                <img alt="Immaculate minimalist Scandinavian living room with pristine hardwood floors, contemporary designer furniture, neutral tones, soft sunlight streaming through floor to ceiling windows, perfectly organized and clean interior, architectural photograph style." class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjo5on0P_tUkbEAcsS8g_sQ6-LbvHupkKLQfVjYnbfzH75pnFxk-72s0QIX3oR5ayuoyQfLXXSzJW1fm15UDBuae8MyP-2ObVdr6Z4Vd3dTYhGHxC2C7pghfvkTwY1caIejbcltbDCYRLTDfqBqe8BaXkI2dHd_jcXLBl1NMcLJwXxVnpUvadpCZOF3Tvot8IyvxUXvDaS30wFMPvHthF9QXK6azUIPtRlNb5y1TjlMkocYdbvunkPA">
+                <div class="absolute top-3 left-3 px-2 py-1 rounded-md bg-surface-container-lowest/95 backdrop-blur-sm border border-on-surface/[0.06]">
+                  <span class="text-label-sm font-label-sm text-on-surface tracking-wide">Tier 01 · Weekly / Bi-weekly / Monthly</span>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col gap-4">
+                <div class="flex items-start gap-3">
+                  <div class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-on-surface group-hover:text-surface transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">autorenew</span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-title-lg font-title-lg text-on-surface">Recurring Residential Care</h3>
+                    <span class="text-label-sm font-label-sm text-secondary">Ongoing maintenance</span>
+                  </div>
+                </div>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  Engineered to eliminate dust build-up, prevent scale accumulation, and maintain an effortless state of visual calm in your residence.
+                </p>
+                <ul class="flex flex-col gap-2 text-body-sm font-body-sm text-on-surface pt-4 border-t border-on-surface/[0.06]">
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Complete living-area dust extraction &amp; vacuum</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Kitchen countertop degreasing &amp; range wipe down</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Sanitary fixture descaling &amp; chrome polishing</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> High-touch points: switches, handles &amp; remotes</li>
+                </ul>
+              </div>
+              <div class="mt-auto px-6 pb-6 pt-3 border-t border-on-surface/[0.06] flex items-center justify-between gap-4">
+                <div class="flex flex-col">
+                  <span class="text-label-sm font-label-sm text-on-surface-variant">Recommended</span>
+                  <span class="text-title-md font-title-md text-on-surface">Bi-weekly cadence</span>
+                </div>
+                <a class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary hover:text-on-surface transition-colors" data-path="contact-and-quote" href="#">
+                  Configure
+                  <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 02 · Deep Cleaning -->
+            <article class="reveal group flex flex-col bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden" style="transition-delay: 60ms;">
+              <div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+                <img alt="Detailed close up of pristine marble kitchen countertop with stainless steel fixtures reflecting daylight, immaculate clean backsplash tiles with spotless grout, ultra sharp architectural photography, cool serene light." class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzTeJ7oO64g-mQ_hH3ll8H8m7HM8XfR_8w8ILVKxC6LVFb-lOVvovJ8bNpTTUBCTktrHmzd1h8mNYYkvO94Q-GPn8fCMwOH_LQIdnojQhcZVE1LVNsJh5rByVKAsrqEztIr6MgIYKxtpd8C1o2fAu9xWLUKnT8lV6ZrDjCvEjgDrgxuF-FDHteRgA53dzoa-UPtPUWyL26lYGTCHxTOWVRGl3C-S6i7b5oLCQRSfaXw7UVKvIz08KJqg">
+                <div class="absolute top-3 left-3 px-2 py-1 rounded-md bg-surface-container-lowest/95 backdrop-blur-sm border border-on-surface/[0.06]">
+                  <span class="text-label-sm font-label-sm text-on-surface tracking-wide">Tier 02 · Restorative</span>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col gap-4">
+                <div class="flex items-start gap-3">
+                  <div class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-on-surface group-hover:text-surface transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">health_and_safety</span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-title-lg font-title-lg text-on-surface">One-Time Deep Cleaning</h3>
+                    <span class="text-label-sm font-label-sm text-secondary">Seasonal reset</span>
+                  </div>
+                </div>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  An intensive baseline restoration addressing neglected micro-crevices, stubborn limescale deposits, vents, and architectural trims.
+                </p>
+                <ul class="flex flex-col gap-2 text-body-sm font-body-sm text-on-surface pt-4 border-t border-on-surface/[0.06]">
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Hand-scrubbed baseboards, doors &amp; door jambs</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Appliance exterior degreasing &amp; behind pull-outs</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Bathroom grout restoration &amp; heavy scale removal</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Interior air vent registers &amp; overhead fixture dusting</li>
+                </ul>
+              </div>
+              <div class="mt-auto px-6 pb-6 pt-3 border-t border-on-surface/[0.06] flex items-center justify-between gap-4">
+                <div class="flex flex-col">
+                  <span class="text-label-sm font-label-sm text-on-surface-variant">Recommended</span>
+                  <span class="text-title-md font-title-md text-on-surface">Seasonal reset</span>
+                </div>
+                <a class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary hover:text-on-surface transition-colors" data-path="contact-and-quote" href="#">
+                  Configure
+                  <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 03 · Move In/Out -->
+            <article class="reveal group flex flex-col bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden" style="transition-delay: 120ms;">
+              <div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+                <img alt="Sunlit empty high-end modern apartment interior with pale wood floors, spotless floor to ceiling glass windows, clean empty white built-in shelving, architectural clean lines, moving in ready, immaculate atmosphere." class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG3u4-whXao1aiwy27xIuNIaWbV6E7aXWC7Kk5eH_xzNEaCPrul5Z9bunhP00SzkRk9tmYdKVygMKHDTZflYM_p5Kf1_EWO9UfF5G2f2Fuof2-ef9Ex6HjFnG9DgHIfDGv6Mu8W4vTobWWFHrhhNpu276FZL_gZ9GW037jsFex6vgq7xlTVRyop5u5Ty3DtRSF_S95CGt8N-58AQgcqgXZGVoE8VO6Ovcqq5jLmFlyJCFnFqmOG5kdvA">
+                <div class="absolute top-3 left-3 px-2 py-1 rounded-md bg-surface-container-lowest/95 backdrop-blur-sm border border-on-surface/[0.06]">
+                  <span class="text-label-sm font-label-sm text-on-surface tracking-wide">Tier 03 · Turnover critical</span>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col gap-4">
+                <div class="flex items-start gap-3">
+                  <div class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-on-surface group-hover:text-surface transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">real_estate_agent</span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-title-lg font-title-lg text-on-surface">Move-In / Move-Out</h3>
+                    <span class="text-label-sm font-label-sm text-secondary">Turnover &amp; compliance</span>
+                  </div>
+                </div>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  Exhaustive turnkey sanitization for empty properties. Prepared to meet lease escrow standards, property handovers, and buyer inspections.
+                </p>
+                <ul class="flex flex-col gap-2 text-body-sm font-body-sm text-on-surface pt-4 border-t border-on-surface/[0.06]">
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> All empty cabinet &amp; drawer interiors wiped spotless</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Deep interior appliance detailing (oven, fridge, dishwasher)</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Closet shelving, rods, and mirror track cleaning</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Wall scuff mitigation &amp; light fixture de-griming</li>
+                </ul>
+              </div>
+              <div class="mt-auto px-6 pb-6 pt-3 border-t border-on-surface/[0.06] flex items-center justify-between gap-4">
+                <div class="flex flex-col">
+                  <span class="text-label-sm font-label-sm text-on-surface-variant">Standard</span>
+                  <span class="text-title-md font-title-md text-on-surface">Deposit refund ready</span>
+                </div>
+                <a class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary hover:text-on-surface transition-colors" data-path="contact-and-quote" href="#">
+                  Configure
+                  <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 04 · Office (2-col wide on lg) -->
+            <article class="reveal group flex flex-col md:col-span-2 lg:col-span-2 lg:flex-row bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden" style="transition-delay: 180ms;">
+              <div class="relative lg:w-1/2 min-h-[260px] overflow-hidden bg-surface-container">
+                <img alt="Quiet modern corporate conference room and open plan office space, organized ergonomic black task chairs, polished wood desk, glass partition walls, perfectly clean carpet tiles, architectural interior photography, serene atmosphere." class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTkVzYnP_z53S1S47W2edyb-vqK3X7Hrz4oRsOrePjkx3Gjl9ja-ML26KecUNhlVo3oCSQ1N7rwdyQ359gTtdQKvhJGjFjqjrc0Kj7HMIE2r9qDg0tWQLCOvvs5Kpr6CTTOzpBAsatRUXPep4H9z3KYILVGWNMx9YkJmnDAlMWJtXmEx79DpEEN3FYjxvGatSIudcy9RDjxCh139rBgrrVwWoogJfw65cAY1OlSvvccm4Djnn-5d41rg">
+                <div class="absolute top-3 left-3 px-2 py-1 rounded-md bg-surface-container-lowest/95 backdrop-blur-sm border border-on-surface/[0.06]">
+                  <span class="text-label-sm font-label-sm text-on-surface tracking-wide">Tier 04 · Corporate &amp; agency</span>
+                </div>
+              </div>
+              <div class="p-6 lg:p-7 lg:w-1/2 flex flex-col gap-4">
+                <div class="flex items-start gap-3">
+                  <div class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-on-surface group-hover:text-surface transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">domain</span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-title-lg font-title-lg text-on-surface">Office &amp; Workplace Maintenance</h3>
+                    <span class="text-label-sm font-label-sm text-secondary">Day porter or off-hours</span>
+                  </div>
+                </div>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  Structured day-porter or after-hours commercial hygiene programs ensuring executive presence, allergen reduction, and sterile high-traffic collaborative zones.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-body-sm font-body-sm text-on-surface pt-4 border-t border-on-surface/[0.06]">
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Workstation disinfection</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Boardroom sanitization</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Breakroom micro-sanitation</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Waste stream &amp; recycling sorting</li>
+                </ul>
+                <div class="mt-auto pt-4 border-t border-on-surface/[0.06] flex items-center justify-between gap-4">
+                  <div class="flex flex-col">
+                    <span class="text-label-sm font-label-sm text-on-surface-variant">Schedule</span>
+                    <span class="text-title-md font-title-md text-on-surface">Daily or 3x / week</span>
+                  </div>
+                  <a class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary hover:text-on-surface transition-colors" data-path="commercial" href="#">
+                    Corporate specs
+                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 05 · Retail -->
+            <article class="reveal group flex flex-col bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors overflow-hidden" style="transition-delay: 240ms;">
+              <div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+                <img alt="Luxury boutique showroom with gleaming polished concrete floors, spotless glass retail display vitrines, architectural track lighting, immaculate retail luxury environment with high visual clarity." class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVUNWvpIWeSNFvDGsuo2CodyDrp5OSuSb5FErBxhZ-M51z4A9xDbVxxI7yUkL88cIoyKAN-dqZd-1GSXh-hTYM2DlIDj0GrruWxT9Q_NJLzKcDUndj8kgevDYyeuRx49KoaiFmHJ_Tlte0sHI_AF_DC2hWzdnM1ZkRzSZeoWrmXCLTmkweymrTyE8OdeVkEw92g9cZJl-PRFEq6VXydTam3msT1HFDuM-35bnZV6JckfGC9wNghpOgbw">
+                <div class="absolute top-3 left-3 px-2 py-1 rounded-md bg-surface-container-lowest/95 backdrop-blur-sm border border-on-surface/[0.06]">
+                  <span class="text-label-sm font-label-sm text-on-surface tracking-wide">Tier 05 · Showrooms &amp; retail</span>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col gap-4">
+                <div class="flex items-start gap-3">
+                  <div class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0 group-hover:bg-on-surface group-hover:text-surface transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">storefront</span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-title-lg font-title-lg text-on-surface">Commercial &amp; Retail Facilities</h3>
+                    <span class="text-label-sm font-label-sm text-secondary">Hospitality-grade</span>
+                  </div>
+                </div>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  Visual perfection designed for customer-facing brands, luxury boutiques, fitness centers, and architectural galleries.
+                </p>
+                <ul class="flex flex-col gap-2 text-body-sm font-body-sm text-on-surface pt-4 border-t border-on-surface/[0.06]">
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> High-gloss glass displays &amp; mirrors</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> High-frequency restroom replenishment</li>
+                  <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container mt-0.5">check_circle</span> Slip-rated floor washing &amp; buffing</li>
+                </ul>
+              </div>
+              <div class="mt-auto px-6 pb-6 pt-3 border-t border-on-surface/[0.06] flex items-center justify-between gap-4">
+                <div class="flex flex-col">
+                  <span class="text-label-sm font-label-sm text-on-surface-variant">Access</span>
+                  <span class="text-title-md font-title-md text-on-surface">Off-hours secure</span>
+                </div>
+                <a class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary hover:text-on-surface transition-colors" data-path="commercial" href="#">
+                  Configure
+                  <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SCOPE MATRIX
+           ============================================================ -->
+      <section class="w-full border-t border-on-surface/[0.06]" id="scope-matrix">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="reveal flex flex-col items-start gap-3 mb-12 max-w-[52ch]">
+            <h2 class="text-[26px] sm:text-headline-lg font-headline-lg text-on-surface tracking-tight">Program scope matrix</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+              Direct comparative view of deliverables across our primary cleaning contracts. Designed for absolute operational transparency.
+            </p>
+          </div>
+
+          <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden" style="transition-delay: 80ms;">
+            <div class="overflow-x-auto">
+              <table class="w-full text-left border-collapse min-w-[760px]">
+                <thead>
+                  <tr class="bg-surface-container-low text-on-surface">
+                    <th class="py-4 px-6 text-label-md font-label-md uppercase text-on-surface-variant tracking-wider w-[40%]">Deliverables</th>
+                    <th class="py-4 px-4 text-label-md font-label-md uppercase text-on-surface-variant tracking-wider text-center">Recurring</th>
+                    <th class="py-4 px-4 text-label-md font-label-md uppercase text-on-surface tracking-wider text-center bg-surface-container">Deep clean</th>
+                    <th class="py-4 px-4 text-label-md font-label-md uppercase text-on-surface-variant tracking-wider text-center">Move-in / out</th>
+                    <th class="py-4 px-4 text-label-md font-label-md uppercase text-on-surface-variant tracking-wider text-center">Commercial</th>
+                  </tr>
+                </thead>
+                <tbody class="text-body-sm font-body-sm text-on-surface-variant divide-y divide-on-surface/[0.06]">
+                  <tr class="hover:bg-surface-container-low/40 transition-colors">
+                    <td class="py-4 px-6">
+                      <div class="text-title-md font-title-md text-on-surface">Dusting horizontal &amp; vertical surfaces</div>
+                      <div class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Surfaces under 8ft height reach</div>
+                    </td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center bg-surface-container/40"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                  </tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors">
+                    <td class="py-4 px-6">
+                      <div class="text-title-md font-title-md text-on-surface">Kitchen exterior wipe down &amp; degrease</div>
+                      <div class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Counters, stove surface, sinks</div>
+                    </td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center bg-surface-container/40"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="text-label-sm font-label-sm text-on-surface-variant">Pantry only</span></td>
+                  </tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors">
+                    <td class="py-4 px-6">
+                      <div class="text-title-md font-title-md text-on-surface">Kitchen interior appliances &amp; drawers</div>
+                      <div class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Oven, fridge, cabinets internally</div>
+                    </td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">remove</span></td>
+                    <td class="py-4 px-4 text-center bg-surface-container/40"><span class="text-label-sm font-label-sm text-secondary">Optional</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">remove</span></td>
+                  </tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors">
+                    <td class="py-4 px-6">
+                      <div class="text-title-md font-title-md text-on-surface">Bathroom scale &amp; grout rejuvenation</div>
+                      <div class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Tile walls, glass tracks, fixtures</div>
+                    </td>
+                    <td class="py-4 px-4 text-center"><span class="text-label-sm font-label-sm text-on-surface-variant">Standard</span></td>
+                    <td class="py-4 px-4 text-center bg-surface-container/40"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                  </tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors">
+                    <td class="py-4 px-6">
+                      <div class="text-title-md font-title-md text-on-surface">Baseboards, door casings &amp; trims</div>
+                      <div class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Hand-wiped perimeter moldings</div>
+                    </td>
+                    <td class="py-4 px-4 text-center"><span class="text-label-sm font-label-sm text-on-surface-variant">Feather dust</span></td>
+                    <td class="py-4 px-4 text-center bg-surface-container/40"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">remove</span></td>
+                  </tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors">
+                    <td class="py-4 px-6">
+                      <div class="text-title-md font-title-md text-on-surface">Trash, recycling &amp; liner refresh</div>
+                      <div class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Empty bins &amp; consolidate disposal</div>
+                    </td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center bg-surface-container/40"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                  </tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors">
+                    <td class="py-4 px-6">
+                      <div class="text-title-md font-title-md text-on-surface">Interior glass &amp; window partitions</div>
+                      <div class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Streak-free pane filtration wash</div>
+                    </td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">remove</span></td>
+                    <td class="py-4 px-4 text-center bg-surface-container/40"><span class="text-label-sm font-label-sm text-secondary">Optional</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                  </tr>
+                  <tr class="hover:bg-surface-container-low/40 transition-colors">
+                    <td class="py-4 px-6">
+                      <div class="text-title-md font-title-md text-on-surface">Hospital-grade disinfection protocol</div>
+                      <div class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Broad-spectrum sanitizing mists</div>
+                    </td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-surface-variant/40 text-[18px]">remove</span></td>
+                    <td class="py-4 px-4 text-center bg-surface-container/40"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                    <td class="py-4 px-4 text-center"><span class="material-symbols-outlined text-on-tertiary-container text-[18px]">check_circle</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           ADD-ONS
+           ============================================================ -->
+      <section class="w-full border-t border-on-surface/[0.06] bg-surface-container-low/40" id="add-ons">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div class="flex flex-col gap-3 max-w-[52ch]">
+              <h2 class="text-[26px] sm:text-headline-lg font-headline-lg text-on-surface tracking-tight text-balance">
+                Modular add-on services
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+                Attach targeted high-intensity modules to any base residential or turnover package during booking.
+              </p>
+            </div>
+            <p class="text-label-sm font-label-sm text-on-surface-variant max-w-[36ch] text-pretty">
+              Sample pricing shown for demonstration purposes only. Final figures calculated during intake.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+
+            <div class="reveal bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-5 flex flex-col gap-4">
+              <div class="w-9 h-9 rounded-md bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                <span class="material-symbols-outlined text-[18px]">kitchen</span>
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <h3 class="text-title-md font-title-md text-on-surface">Refrigerator deep interior</h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">Full shelf extraction, food-safe sanitization, gasket mold prevention.</p>
+              </div>
+              <div class="mt-auto pt-3 border-t border-on-surface/[0.06] flex items-center justify-between">
+                <span class="text-label-sm font-label-sm text-on-surface-variant">Sample</span>
+                <span class="text-title-md font-title-md text-on-surface tabular-nums">$45.00</span>
+              </div>
+            </div>
+
+            <div class="reveal bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-5 flex flex-col gap-4" style="transition-delay: 60ms;">
+              <div class="w-9 h-9 rounded-md bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                <span class="material-symbols-outlined text-[18px]">microwave</span>
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <h3 class="text-title-md font-title-md text-on-surface">Oven carbon strip</h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">Non-fuming eco-caustic grease liquefaction, glass door &amp; rack soak.</p>
+              </div>
+              <div class="mt-auto pt-3 border-t border-on-surface/[0.06] flex items-center justify-between">
+                <span class="text-label-sm font-label-sm text-on-surface-variant">Sample</span>
+                <span class="text-title-md font-title-md text-on-surface tabular-nums">$55.00</span>
+              </div>
+            </div>
+
+            <div class="reveal bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-5 flex flex-col gap-4" style="transition-delay: 120ms;">
+              <div class="w-9 h-9 rounded-md bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                <span class="material-symbols-outlined text-[18px]">window</span>
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <h3 class="text-title-md font-title-md text-on-surface">Interior window panes</h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">Interior glass squeegee wash, tracks vacuumed, sills detailed.</p>
+              </div>
+              <div class="mt-auto pt-3 border-t border-on-surface/[0.06] flex items-center justify-between">
+                <span class="text-label-sm font-label-sm text-on-surface-variant">Sample</span>
+                <span class="text-title-md font-title-md text-on-surface tabular-nums">$8 / pane</span>
+              </div>
+            </div>
+
+            <div class="reveal bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-5 flex flex-col gap-4" style="transition-delay: 180ms;">
+              <div class="w-9 h-9 rounded-md bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                <span class="material-symbols-outlined text-[18px]">balcony</span>
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <h3 class="text-title-md font-title-md text-on-surface">Balcony &amp; patio sweep</h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">Debris clearance, perimeter rail wipe, door track brushing.</p>
+              </div>
+              <div class="mt-auto pt-3 border-t border-on-surface/[0.06] flex items-center justify-between">
+                <span class="text-label-sm font-label-sm text-on-surface-variant">Sample</span>
+                <span class="text-title-md font-title-md text-on-surface tabular-nums">$35.00</span>
+              </div>
+            </div>
+
+            <div class="reveal bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-5 flex flex-col gap-4" style="transition-delay: 240ms;">
+              <div class="w-9 h-9 rounded-md bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+                <span class="material-symbols-outlined text-[18px]">local_laundry_service</span>
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <h3 class="text-title-md font-title-md text-on-surface">Linen &amp; laundry refresh</h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">Stripped linens, sanitized wash/dry cycle, hospital-corner remake.</p>
+              </div>
+              <div class="mt-auto pt-3 border-t border-on-surface/[0.06] flex items-center justify-between">
+                <span class="text-label-sm font-label-sm text-on-surface-variant">Sample</span>
+                <span class="text-title-md font-title-md text-on-surface tabular-nums">$30 / bed</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           ESTIMATOR
+           ============================================================ -->
+      <section class="w-full border-t border-on-surface/[0.06]" id="estimator">
+        <div class="max-w-5xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="reveal flex flex-col items-start gap-3 mb-12 max-w-[52ch]">
+            <h2 class="text-[26px] sm:text-headline-lg font-headline-lg text-on-surface tracking-tight">Explore cadence &amp; footprint</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+              Adjust the sliders to see how service frequency optimizes crew scheduling, pricing stability, and dwelling condition.
+            </p>
+          </div>
+
+          <div class="reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden" style="transition-delay: 80ms;">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+
+              <!-- Controls -->
+              <div class="lg:col-span-7 p-6 sm:p-8 flex flex-col gap-8">
+                <div>
+                  <div class="flex items-baseline justify-between mb-3">
+                    <label class="text-title-md font-title-md text-on-surface" for="sqft-slider">Property size</label>
+                    <span class="text-title-md font-title-md text-on-surface tabular-nums" id="sqft-val">1,800 sq ft</span>
+                  </div>
+                  <input aria-describedby="sqft-hint" class="w-full h-1.5 bg-surface-container rounded-full appearance-none cursor-pointer accent-on-surface" id="sqft-slider" max="5000" min="600" step="100" type="range" value="1800">
+                  <div class="flex justify-between mt-2 text-label-sm font-label-sm text-on-surface-variant" id="sqft-hint">
+                    <span>600 sq ft</span>
+                    <span>5,000 sq ft</span>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="text-title-md font-title-md text-on-surface block mb-3">Service frequency plan</label>
+                  <div class="grid grid-cols-3 gap-2" id="freq-buttons">
+                    <button class="freq-btn h-10 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface bg-surface-container-low transition-colors" data-discount="0.20" data-label="Weekly (20% off)" type="button">Weekly</button>
+                    <button class="freq-btn h-10 rounded-md text-label-sm font-label-sm text-surface bg-on-surface transition-colors" data-discount="0.15" data-label="Bi-weekly (15% off)" type="button">Bi-weekly</button>
+                    <button class="freq-btn h-10 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface bg-surface-container-low transition-colors" data-discount="0.05" data-label="Monthly (5% off)" type="button">Monthly</button>
+                  </div>
+                </div>
+
+                <p class="text-label-sm font-label-sm text-on-surface-variant pt-2 border-t border-on-surface/[0.06]">
+                  <span class="text-on-surface">Illustrative only.</span> Final estimates are calculated by exact square footage, room count, and current soil conditions.
+                </p>
+              </div>
+
+              <!-- Result -->
+              <div class="lg:col-span-5 bg-surface-container-low/50 border-t lg:border-t-0 lg:border-l border-on-surface/[0.06] p-6 sm:p-8 flex flex-col justify-between gap-6">
+                <div class="flex flex-col gap-6">
+                  <div class="flex items-center justify-between">
+                    <span class="text-label-md font-label-md uppercase text-on-surface-variant">Estimator result</span>
+                    <span class="material-symbols-outlined text-secondary text-[18px]">calculate</span>
+                  </div>
+
+                  <div class="flex flex-col gap-1">
+                    <span class="text-label-sm font-label-sm text-on-surface-variant">Estimated per-visit</span>
+                    <div class="flex items-baseline gap-1.5">
+                      <span class="text-[40px] font-headline-xl text-on-surface font-semibold tabular-nums tracking-tight" id="price-output">$165</span>
+                      <span class="text-body-sm font-body-sm text-on-surface-variant">/ clean</span>
+                    </div>
+                    <span class="text-label-sm font-label-sm text-secondary font-medium" id="plan-label">Bi-weekly (15% off)</span>
+                  </div>
+
+                  <div class="flex flex-col gap-2.5 text-body-sm font-body-sm pt-5 border-t border-on-surface/[0.06]">
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Estimated duration</span>
+                      <span class="text-on-surface font-medium tabular-nums" id="duration-val">2.5 – 3.5 hours</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Certified crew</span>
+                      <span class="text-on-surface font-medium">2 specialists</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Eco-products</span>
+                      <span class="text-on-tertiary-container font-medium">Included</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="w-full inline-flex items-center justify-center gap-1.5 h-10 rounded-md bg-on-surface text-surface text-title-md font-title-md hover:bg-on-surface/90 transition-colors focus-ring" data-path="contact-and-quote" href="#">
+                  Configure this tier
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           CTA BAND
+           ============================================================ -->
+      <section class="w-full border-t border-on-surface/[0.06] bg-surface-container-low/50">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
+          <div class="reveal flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+            <div class="flex flex-col gap-3 max-w-[52ch]">
+              <h2 class="text-[24px] sm:text-[28px] font-headline-md text-on-surface tracking-tight text-balance">
+                Find the right frequency for your space.
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+                Speak with our operations coordinator to review floorplans, hygiene priorities, and lock in our pristine walk-through assurance.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 shrink-0">
+              <a class="inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-md bg-on-surface text-surface text-title-md font-title-md hover:bg-on-surface/90 transition-colors focus-ring" data-path="contact-and-quote" href="#">
+                <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                Get a custom quote
+              </a>
+              <a class="inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-md bg-surface text-on-surface text-title-md font-title-md border border-on-surface/[0.12] hover:bg-surface-container-low hover:border-on-surface/[0.18] transition-colors focus-ring" data-path="about-and-faqs" href="#">
+                View quality standards
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="w-full border-t border-on-surface/[0.06]">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2.5">
+            <img alt="Pristine Works Logo" class="h-7 w-7 rounded-md object-contain" loading="lazy" decoding="async" src="https://lh3.googleusercontent.com/aida/AEtjO1X7ReB7jhx-DtCL2RwaZmfEKGvt0mPsxHTKrXwYNYYTzCD7xit1G2UUOXPZryKnZ_gjVJLdLomipnc7P5scW4Fx64yplA0hjsRGN1AtP1qi5TZU0sZH_bW437-zWUUCvkPzVqg65Pk8BWaSkofO_PbW_Bl1xF-GkmKFm0NgZyNTNik6J7WS-pCqC-CD5RiKwd6np84CZg-XzfzqSPrhND3rl74z-tq0sXbBcp15FbzKEyWazeT-ZRYxvr5P">
+            <span class="text-title-md font-title-md text-on-surface">Pristine Works</span>
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty max-w-[42ch]">Architectural-grade cleaning precision creating calm, orderly, and hygienic environments for residences and corporate facilities.</p>
+          <span class="text-label-sm font-label-sm text-on-surface-variant/70">A demo by Falalu Creative Studio. Fictional business concept.</span>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Services</h4>
+          <div class="flex flex-col gap-2.5">
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Recurring home</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Deep clean</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Move in / move out</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="commercial" href="#">Office facilities</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="commercial" href="#">Retail &amp; showrooms</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Resources</h4>
+          <div class="flex flex-col gap-2.5">
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="all-services" href="#">Preparation checklist</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="about-and-faqs" href="#">Our process</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="contact-and-quote" href="#">Sample rates &amp; tiers</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="about-and-faqs" href="#">Frequently asked questions</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Contact</h4>
+          <div class="flex flex-col gap-3 text-body-sm font-body-sm">
+            <div class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px] mt-0.5">location_on</span>
+              <span class="text-on-surface-variant">100 Cleanworks Blvd, Suite 400, Metro City</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">mail</span>
+              <span class="text-on-surface-variant">hello@pristineworks-demo.com</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">call</span>
+              <span class="text-on-surface-variant tabular-nums">(555) 019-2834</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">schedule</span>
+              <span class="text-on-surface-variant">Mon – Sat · 7:00 AM – 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-14 pt-6 border-t border-on-surface/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <p class="text-label-sm font-label-sm text-on-surface-variant">© 2025 Pristine Works. Sample pricing and details are illustrative. Demo project by Falalu Creative Studio.</p>
+        <div class="flex items-center gap-6 text-label-sm font-label-sm text-on-surface-variant">
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Privacy policy</a>
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Terms of service</a>
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Hygiene standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js-enabled');
+
+      // Scroll reveal
+      var revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.10, rootMargin: '0px 0px -60px 0px' });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+
+      // Mobile menu
+      var btn = document.getElementById('mobile-menu-btn');
+      var panel = document.getElementById('mobile-nav');
+      var icon = document.getElementById('mobile-menu-icon');
+      if (btn && panel) {
+        var closeMenu = function () {
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open menu');
+          if (icon) icon.textContent = 'menu';
+        };
+        var openMenu = function () {
+          panel.classList.remove('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.setAttribute('aria-label', 'Close menu');
+          if (icon) icon.textContent = 'close';
+        };
+        btn.addEventListener('click', function () {
+          if (panel.classList.contains('hidden')) openMenu();
+          else closeMenu();
+        });
+        panel.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', closeMenu);
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeMenu();
+        });
+        window.addEventListener('resize', function () {
+          if (window.innerWidth >= 1024) closeMenu();
+        });
+      }
+    })();
+
+    // Estimator
+    (function () {
+      var slider = document.getElementById('sqft-slider');
+      var sqftVal = document.getElementById('sqft-val');
+      var priceOutput = document.getElementById('price-output');
+      var durationVal = document.getElementById('duration-val');
+      var planLabel = document.getElementById('plan-label');
+      var freqButtons = document.querySelectorAll('.freq-btn');
+      var currentDiscount = 0.15;
+
+      function updateCalculation() {
+        if (!slider) return;
+        var sqft = parseInt(slider.value, 10);
+        sqftVal.textContent = sqft.toLocaleString() + ' sq ft';
+
+        var rawBase = 110 + Math.max(0, (sqft - 600) * 0.05);
+        var finalPrice = Math.round(rawBase * (1 - currentDiscount));
+        priceOutput.textContent = '$' + finalPrice;
+
+        if (sqft < 1200) durationVal.textContent = '1.5 – 2.0 hours';
+        else if (sqft < 2500) durationVal.textContent = '2.5 – 3.5 hours';
+        else if (sqft < 3800) durationVal.textContent = '3.5 – 5.0 hours';
+        else durationVal.textContent = '5.0 – 6.5 hours';
+      }
+
+      if (slider) slider.addEventListener('input', updateCalculation);
+
+      freqButtons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          freqButtons.forEach(function (x) {
+            x.classList.remove('bg-on-surface', 'text-surface');
+            x.classList.add('bg-surface-container-low', 'text-on-surface-variant', 'hover:text-on-surface');
+          });
+          b.classList.remove('bg-surface-container-low', 'text-on-surface-variant', 'hover:text-on-surface');
+          b.classList.add('bg-on-surface', 'text-surface');
+
+          currentDiscount = parseFloat(b.getAttribute('data-discount'));
+          if (planLabel) planLabel.textContent = b.getAttribute('data-label');
+          updateCalculation();
+        });
+      });
+
+      updateCalculation();
+    })();
+  </script>
+</body>
+  </html>
