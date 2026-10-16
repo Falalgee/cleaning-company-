@@ -160,7 +160,6 @@
 </head>
 <body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
 
-  <!-- HEADER -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-on-surface/[0.06]">
     <div class="h-16 max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between gap-6">
       <a class="flex items-center gap-2.5 shrink-0 focus-ring rounded-md" data-path="home" href="#">
@@ -722,7 +721,6 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
   <footer class="w-full border-t border-on-surface/[0.06]">
     <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -794,6 +792,21 @@
     (function () {
       document.documentElement.classList.add('js-enabled');
 
+      // ---- ROUTER: convert data-path to real hrefs ----
+      var routes = {
+        'home': 'index.html',
+        'all-services': 'all-services.html',
+        'residential': 'residential.html',
+        'commercial': 'commercial.html',
+        'about-and-faqs': 'about-faqs.html',
+        'contact-and-quote': 'contact-quote.html'
+      };
+      document.querySelectorAll('[data-path]').forEach(function (el) {
+        var path = el.getAttribute('data-path');
+        if (routes[path]) el.setAttribute('href', routes[path]);
+      });
+
+      // Scroll reveal
       var revealEls = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window) {
         var io = new IntersectionObserver(function (entries) {
@@ -809,6 +822,7 @@
         revealEls.forEach(function (el) { el.classList.add('is-visible'); });
       }
 
+      // Mobile menu
       var btn = document.getElementById('mobile-menu-btn');
       var panel = document.getElementById('mobile-nav');
       var icon = document.getElementById('mobile-menu-icon');
@@ -841,6 +855,7 @@
       }
     })();
 
+    // FAQ accordion
     function toggleFaq(btn) {
       var card = btn.closest('.faq-card');
       var content = card.querySelector('.faq-content');
@@ -869,6 +884,7 @@
       }
     }
 
+    // FAQ category filter
     function filterFaq(category) {
       var buttons = document.querySelectorAll('.faq-filter-btn');
       var activeCls = 'faq-filter-btn px-3.5 py-1.5 rounded-md text-label-sm font-label-sm text-surface bg-on-surface transition-all';
@@ -886,6 +902,7 @@
       });
     }
 
+    // Prep checklist counter
     function updateChecklistCount() {
       var total = document.querySelectorAll('.checklist-item').length;
       var checked = document.querySelectorAll('.checklist-item:checked').length;
@@ -898,6 +915,7 @@
       }
     }
 
+    // Mock download feedback
     function handleDownloadMock() {
       var feedback = document.getElementById('download-feedback');
       var btn = document.getElementById('download-btn');
@@ -912,4 +930,4 @@
     }
   </script>
 </body>
-  </html>
+</html>
