@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>About &amp; FAQs — Pristine Works</title>
+  <meta name="description" content="The standard of care behind every clean. Our methodology, preparation guidance, and answers to frequently asked questions.">
+  <meta name="theme-color" content="#f8f9ff">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link crossorigin href="https://lh3.googleusercontent.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline-variant": "#c6c6cd", "on-primary-container": "#7c839b",
+            "on-primary-fixed-variant": "#3f465c", "on-tertiary-fixed-variant": "#005137",
+            "primary": "#000000", "on-surface-variant": "#45464d",
+            "surface-bright": "#f8f9ff", "inverse-surface": "#213145",
+            "inverse-on-surface": "#eaf1ff", "background": "#f8f9ff",
+            "on-error-container": "#93000a", "surface": "#f8f9ff",
+            "surface-container-low": "#eff4ff", "outline": "#76777d",
+            "surface-container-lowest": "#ffffff", "on-background": "#0b1c30",
+            "secondary-fixed": "#cce5ff", "on-secondary-container": "#00476e",
+            "secondary-fixed-dim": "#93ccff", "surface-tint": "#565e74",
+            "surface-container": "#e5eeff", "error-container": "#ffdad6",
+            "on-primary": "#ffffff", "on-secondary-fixed": "#001d31",
+            "secondary-container": "#5bb8fe", "surface-variant": "#d3e4fe",
+            "on-surface": "#0b1c30", "on-primary-fixed": "#131b2e",
+            "secondary": "#006398", "error": "#ba1a1a", "on-secondary": "#ffffff",
+            "primary-container": "#131b2e", "inverse-primary": "#bec6e0",
+            "primary-fixed-dim": "#bec6e0", "primary-fixed": "#dae2fd",
+            "tertiary": "#000000", "on-error": "#ffffff",
+            "tertiary-container": "#002114", "tertiary-fixed-dim": "#68dba9",
+            "on-tertiary-container": "#069669", "on-tertiary-fixed": "#002114",
+            "on-secondary-fixed-variant": "#004b73", "surface-container-high": "#dce9ff",
+            "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#85f8c4", "surface-container-highest": "#d3e4fe"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem", "sm": "0.375rem", "md": "0.5rem",
+            "lg": "0.75rem", "xl": "1rem", "2xl": "1.25rem", "full": "9999px"
+          },
+          boxShadow: {
+            "xs": "0 1px 2px 0 rgba(11,28,48,0.04)",
+            "sm": "0 1px 3px 0 rgba(11,28,48,0.06), 0 1px 2px -1px rgba(11,28,48,0.04)"
+          },
+          fontFamily: {
+            "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "headline-xl": ["44px", { lineHeight: "1.08", letterSpacing: "-0.03em", fontWeight: "600" }],
+            "headline-lg": ["32px", { lineHeight: "1.18", letterSpacing: "-0.025em", fontWeight: "600" }],
+            "headline-md": ["22px", { lineHeight: "1.3", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "title-lg":    ["17px", { lineHeight: "1.4", letterSpacing: "-0.012em", fontWeight: "600" }],
+            "title-md":    ["14px", { lineHeight: "1.4", letterSpacing: "-0.005em", fontWeight: "600" }],
+            "body-lg":     ["16px", { lineHeight: "1.65", fontWeight: "400" }],
+            "body-md":     ["14px", { lineHeight: "1.6", fontWeight: "400" }],
+            "body-sm":     ["13px", { lineHeight: "1.55", fontWeight: "400" }],
+            "label-md":    ["11px", { lineHeight: "1.4", letterSpacing: "0.08em", fontWeight: "600" }],
+            "label-sm":    ["11px", { lineHeight: "1.4", letterSpacing: "0.02em", fontWeight: "500" }]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; scroll-padding-top: 5rem; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    ::selection { background: rgba(11,28,48,0.10); }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+      vertical-align: middle;
+    }
+
+    @keyframes pw-fade-up {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pw-pulse-dot {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.35; }
+    }
+
+    .js-enabled .reveal {
+      opacity: 0; transform: translateY(16px);
+      transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+    .js-enabled .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    .hero-enter { animation: pw-fade-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    .hero-enter.d1 { animation-delay: 0.06s; }
+    .hero-enter.d2 { animation-delay: 0.12s; }
+
+    .pulse-dot { animation: pw-pulse-dot 2.4s ease-in-out infinite; }
+
+    .focus-ring:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px #f8f9ff, 0 0 0 4px rgba(11,28,48,0.25);
+    }
+
+    input[type="checkbox"].prep-check {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid rgba(11,28,48,0.20);
+      border-radius: 4px;
+      background: #ffffff;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+    }
+    input[type="checkbox"].prep-check:hover { border-color: rgba(11,28,48,0.35); }
+    input[type="checkbox"].prep-check:checked {
+      background: #0b1c30;
+      border-color: #0b1c30;
+    }
+    input[type="checkbox"].prep-check:checked::after {
+      content: "";
+      position: absolute;
+      left: 5px; top: 1.5px;
+      width: 5px; height: 10px;
+      border: solid #f8f9ff;
+      border-width: 0 1.5px 1.5px 0;
+      transform: rotate(45deg);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .js-enabled .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-on-surface/[0.06]">
+    <div class="h-16 max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between gap-6">
+      <a class="flex items-center gap-2.5 shrink-0 focus-ring rounded-md" data-path="home" href="#">
+        <img alt="Pristine Works" class="h-7 w-7 rounded-md object-contain" decoding="async" src="https://lh3.googleusercontent.com/aida/AEtjO1X7ReB7jhx-DtCL2RwaZmfEKGvt0mPsxHTKrXwYNYYTzCD7xit1G2UUOXPZryKnZ_gjVJLdLomipnc7P5scW4Fx64yplA0hjsRGN1AtP1qi5TZU0sZH_bW437-zWUUCvkPzVqg65Pk8BWaSkofO_PbW_Bl1xF-GkmKFm0NgZyNTNik6J7WS-pCqC-CD5RiKwd6np84CZg-XzfzqSPrhND3rl74z-tq0sXbBcp15FbzKEyWazeT-ZRYxvr5P">
+        <span class="text-[15px] font-semibold tracking-tight text-on-surface">Pristine Works</span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden lg:flex items-center gap-0.5">
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="home" href="#">Home</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="all-services" href="#">All Services</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="residential" href="#">Residential</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="commercial" href="#">Commercial</a>
+        <a aria-current="page" class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface bg-surface-container-low" data-path="about-and-faqs" href="#">About &amp; FAQs</a>
+        <a class="px-3 py-1.5 rounded-md text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="contact-and-quote" href="#">Contact &amp; Quote</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a class="hidden sm:flex items-center gap-1.5 text-[13.5px] font-medium text-on-surface-variant hover:text-on-surface transition-colors focus-ring rounded-md px-2 py-1" href="tel:5550192834">
+          <span class="material-symbols-outlined text-[16px]">call</span>
+          <span class="tracking-tight tabular-nums">(555) 019-2834</span>
+        </a>
+        <a class="hidden md:inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-md bg-on-surface text-surface text-[13.5px] font-medium hover:bg-on-surface/90 transition-colors focus-ring" data-path="contact-and-quote" href="#">
+          <span class="material-symbols-outlined text-[16px]">calendar_today</span>
+          <span>Get a Free Quote</span>
+        </a>
+        <button aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu" class="lg:hidden inline-flex items-center justify-center w-9 h-9 rounded-md border border-on-surface/[0.12] text-on-surface hover:bg-surface-container-low transition-colors focus-ring" id="mobile-menu-btn" type="button">
+          <span class="material-symbols-outlined text-[20px]" id="mobile-menu-icon">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="lg:hidden hidden border-t border-on-surface/[0.06] bg-surface/95 backdrop-blur-xl" id="mobile-nav">
+      <nav aria-label="Mobile" class="max-w-6xl mx-auto px-6 sm:px-8 py-4 flex flex-col gap-0.5">
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="home" href="#">Home</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="all-services" href="#">All Services</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="residential" href="#">Residential</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="commercial" href="#">Commercial</a>
+        <a aria-current="page" class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface bg-surface-container-low" data-path="about-and-faqs" href="#">About &amp; FAQs</a>
+        <a class="px-3 py-2.5 rounded-md text-[14px] font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low/60 transition-colors" data-path="contact-and-quote" href="#">Contact &amp; Quote</a>
+        <div class="mt-3 pt-3 border-t border-on-surface/[0.06] flex flex-col gap-2">
+          <a class="flex items-center gap-2 px-3 py-2 text-[14px] font-medium text-on-surface-variant tabular-nums" href="tel:5550192834">
+            <span class="material-symbols-outlined text-[16px]">call</span>
+            (555) 019-2834
+          </a>
+          <a class="inline-flex items-center justify-center h-10 px-4 rounded-md bg-on-surface text-surface text-[14px] font-medium hover:bg-on-surface/90 transition-colors" data-path="contact-and-quote" href="#">
+            Get a Free Quote
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]">
+    <div class="flex flex-col w-full">
+
+      <!-- PAGE INTRO -->
+      <section class="w-full max-w-6xl mx-auto px-6 sm:px-8 pt-12 sm:pt-16 pb-12">
+        <div class="hero-enter flex flex-col gap-5 max-w-[52ch]">
+          <h1 class="text-[32px] sm:text-[40px] lg:text-headline-xl font-headline-xl text-on-surface tracking-tight text-balance">
+            The standard of care behind every clean.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant text-pretty">
+            We believe a meticulously ordered space brings clarity of mind. Learn about our systematic methodology, preparation tips, and frequently asked questions.
+          </p>
+        </div>
+
+        <div class="hero-enter d1 grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 pt-8 border-t border-on-surface/[0.08]">
+          <div class="flex flex-col gap-1.5">
+            <div class="flex items-baseline gap-1">
+              <span class="text-[28px] font-headline-md text-on-surface font-semibold tabular-nums tracking-tight">35</span>
+              <span class="text-title-md font-title-md text-secondary">pts</span>
+            </div>
+            <span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wide">Supervisory audit</span>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <span class="text-[28px] font-headline-md text-on-surface font-semibold tabular-nums tracking-tight">100%</span>
+            <span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wide">Hospital-grade HEPA</span>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <span class="text-[28px] font-headline-md text-on-surface font-semibold tabular-nums tracking-tight">24h</span>
+            <span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wide">Revisit guarantee</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHOTO STORY BENTO -->
+      <section class="w-full max-w-6xl mx-auto px-6 sm:px-8 pb-20 sm:pb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+
+          <div class="reveal lg:col-span-8 relative rounded-xl overflow-hidden border border-on-surface/[0.06] aspect-[16/10] lg:aspect-auto lg:min-h-[420px] bg-surface-container">
+            <img alt="Architectural modern minimalist penthouse interior with floor to ceiling windows, ultra clean polished natural oak floors, museum style white walls, organized architectural furniture with morning soft natural sunlight creating sterile calm serenity." class="absolute inset-0 w-full h-full object-cover" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPOKMyve6e_SLdCbRLEF1x5EJNwUKBmNf2NQTdKdvIOuPYBzIIWUrGDaoxE03VzJ4A3BIdif8ryH9-ReiCVl_lPauXtk7kVTmbw1CaGfafktQuJT8MaIL_BG4HY8Hgrfuoq7bgOSXHYqHOU_urPiyRSaQp2m-g3uBO9H_vUL_QzmnZiqXSHgAYlcxMc4_JfBsoQV-WCJZzkH9mDl5-Jdfb0PtNgf7ZG6BUPyfSAlHe6YWTJ1n4Yf4VVA">
+          </div>
+
+          <div class="reveal lg:col-span-4 flex flex-col gap-5" style="transition-delay: 80ms;">
+            <div class="flex-1 bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] p-6 sm:p-7 flex flex-col gap-4">
+              <div class="w-10 h-10 rounded-md bg-surface-container flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[20px]">sanitizer</span>
+              </div>
+              <div class="flex flex-col gap-2">
+                <span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold">Material stewardship</span>
+                <h3 class="text-title-lg font-title-lg text-on-surface">Zero harsh caustics. Zero abrasive residue.</h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  From honed Calacatta marble to custom matte black hardware, our team tests and deploys specific neutral agents calibrated to prevent micro-scratching or etching.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-surface-container-low rounded-lg p-4 flex items-start gap-3 border border-on-surface/[0.06]">
+              <span class="material-symbols-outlined text-on-tertiary-container text-[20px] mt-0.5">eco</span>
+              <span class="text-body-sm font-body-sm text-on-surface">Pet &amp; infant certified botanical formulas</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 4-STAGE OPERATING SYSTEM -->
+      <section class="w-full border-t border-on-surface/[0.06]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div class="flex flex-col gap-3 max-w-[46ch]">
+              <h2 class="text-[26px] sm:text-headline-lg font-headline-lg text-on-surface tracking-tight text-balance">
+                The 4-stage operating system
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+                We operate through a sequential protocol inspired by cleanroom standards, preventing cross-contamination while ensuring repeatable high-grade perfection.
+              </p>
+            </div>
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-surface-container border border-on-surface/[0.06] text-on-surface-variant shrink-0">
+              <span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+              <span class="text-label-sm font-label-sm">Zero cross-contamination standard</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <article class="reveal group flex flex-col bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-6 gap-4">
+              <div class="flex items-center justify-between">
+                <span class="text-[28px] font-headline-md text-on-surface-variant/25 font-semibold tabular-nums tracking-tight group-hover:text-secondary transition-colors">01</span>
+                <span class="material-symbols-outlined text-secondary text-[22px]">radar</span>
+              </div>
+              <span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold">Protocol phase 1</span>
+              <h3 class="text-title-lg font-title-lg text-on-surface">Zone assessment &amp; priority plan</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                Upon entry, team leads inspect flooring substrates, fragile stone, pet zones, and high-frequency touch surfaces to sequence the cleaning path and isolate priority tasks.
+              </p>
+              <div class="mt-auto pt-4 border-t border-on-surface/[0.06] flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[14px] text-secondary">checklist</span>
+                <span class="text-label-sm font-label-sm">Customized room trajectory</span>
+              </div>
+            </article>
+
+            <article class="reveal group flex flex-col bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-6 gap-4" style="transition-delay: 60ms;">
+              <div class="flex items-center justify-between">
+                <span class="text-[28px] font-headline-md text-on-surface-variant/25 font-semibold tabular-nums tracking-tight group-hover:text-secondary transition-colors">02</span>
+                <span class="material-symbols-outlined text-secondary text-[22px]">filter_alt</span>
+              </div>
+              <span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold">Protocol phase 2</span>
+              <h3 class="text-title-lg font-title-lg text-on-surface">HEPA filtration &amp; color microfiber</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                4-stage 99.97% HEPA filtration sequesters airborne particulates. Color-coded cloths (Red: sanitary fixtures, Blue: glass/metals, Green: prep areas) prevent bacterial transfer.
+              </p>
+              <div class="mt-auto pt-4 border-t border-on-surface/[0.06] flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[14px] text-on-tertiary-container">palette</span>
+                <span class="text-label-sm font-label-sm">Strict 3-color isolation system</span>
+              </div>
+            </article>
+
+            <article class="reveal group flex flex-col bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-6 gap-4" style="transition-delay: 120ms;">
+              <div class="flex items-center justify-between">
+                <span class="text-[28px] font-headline-md text-on-surface-variant/25 font-semibold tabular-nums tracking-tight group-hover:text-secondary transition-colors">03</span>
+                <span class="material-symbols-outlined text-secondary text-[22px]">vertical_align_bottom</span>
+              </div>
+              <span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold">Protocol phase 3</span>
+              <h3 class="text-title-lg font-title-lg text-on-surface">Top-to-bottom multi-surface sanitizing</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                Cleaners work downward from crown molding, fans, and light fixtures down to counters and baseboards. Dust is captured damp, followed by microfiber mop finishing.
+              </p>
+              <div class="mt-auto pt-4 border-t border-on-surface/[0.06] flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[14px] text-secondary">layers</span>
+                <span class="text-label-sm font-label-sm">Gravity-sequential dusting</span>
+              </div>
+            </article>
+
+            <article class="reveal group flex flex-col bg-surface-container-lowest rounded-lg border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-colors p-6 gap-4" style="transition-delay: 180ms;">
+              <div class="flex items-center justify-between">
+                <span class="text-[28px] font-headline-md text-on-surface-variant/25 font-semibold tabular-nums tracking-tight group-hover:text-secondary transition-colors">04</span>
+                <span class="material-symbols-outlined text-secondary text-[22px]">fact_check</span>
+              </div>
+              <span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold">Protocol phase 4</span>
+              <h3 class="text-title-lg font-title-lg text-on-surface">Supervisory 35-point inspection</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                A designated lead audits light switches, cabinet trim, baseboard creases, and air grills against our 35-point checklist before signing off and releasing the premises.
+              </p>
+              <div class="mt-auto pt-4 border-t border-on-surface/[0.06] flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[14px] text-secondary">task_alt</span>
+                <span class="text-label-sm font-label-sm">Digital QA timestamp &amp; log</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CLIENT PREP CHECKLIST -->
+      <section class="w-full border-t border-on-surface/[0.06] bg-surface-container-low/40">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-start">
+
+            <div class="reveal lg:col-span-5 lg:sticky lg:top-24 flex flex-col gap-6">
+              <h2 class="text-[26px] sm:text-headline-lg font-headline-lg text-on-surface tracking-tight text-balance">
+                Before your Pristine team arrives
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+                A brief 5-minute walkthrough prior to our arrival allows our cleaning technicians to focus entirely on deep sanitization, precision polishing, and restorative detailing.
+              </p>
+
+              <div class="p-6 rounded-lg bg-surface-container-lowest border border-on-surface/[0.06] flex flex-col gap-4">
+                <div class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">download_for_offline</span>
+                  <div class="flex flex-col gap-1">
+                    <h3 class="text-title-md font-title-md text-on-surface">Downloadable PDF checklist</h3>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                      Printable 1-page protocol for estate managers, tenants, and family members.
+                    </p>
+                  </div>
+                </div>
+                <button class="self-start inline-flex items-center gap-1.5 h-10 px-4 rounded-md bg-on-surface text-surface text-title-md font-title-md hover:bg-on-surface/90 transition-colors focus-ring" id="download-btn" onclick="handleDownloadMock()" type="button">
+                  <span class="material-symbols-outlined text-[16px]">file_download</span>
+                  Download client prep sheet
+                </button>
+                <span class="text-label-sm font-label-sm text-on-tertiary-container opacity-0 transition-opacity" id="download-feedback">
+                  Demo only — no file will be downloaded
+                </span>
+              </div>
+
+              <p class="text-body-sm font-body-sm text-on-surface-variant flex items-start gap-2 pt-4 border-t border-on-surface/[0.06]">
+                <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">support_agent</span>
+                Questions before team arrival? Call our lead dispatcher at <strong class="text-on-surface tabular-nums">(555) 019-2834</strong>
+              </p>
+            </div>
+
+            <div class="reveal lg:col-span-7 bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden" style="transition-delay: 100ms;">
+
+              <div class="p-5 sm:p-6 border-b border-on-surface/[0.06] flex items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-secondary text-[22px]">checklist_rtl</span>
+                  <div class="flex flex-col">
+                    <span class="text-title-md font-title-md text-on-surface">Digital readiness checklist</span>
+                    <span class="text-label-sm font-label-sm text-on-surface-variant">Tap to mark tasks before your crew arrives</span>
+                  </div>
+                </div>
+                <div class="text-right shrink-0">
+                  <span class="text-title-md font-title-md text-secondary tabular-nums" id="checklist-progress">0 of 5</span>
+                  <span class="text-label-sm font-label-sm text-on-surface-variant block">Ready</span>
+                </div>
+              </div>
+
+              <div class="divide-y divide-on-surface/[0.06]" id="prep-checklist-container">
+
+                <label class="group flex items-start gap-4 p-5 sm:p-6 hover:bg-surface-container-low/40 transition-colors cursor-pointer select-none">
+                  <input class="prep-check checklist-item mt-0.5" onchange="updateChecklistCount()" type="checkbox">
+                  <div class="flex flex-col gap-1">
+                    <span class="text-title-md font-title-md text-on-surface group-hover:text-secondary transition-colors">
+                      Declutter high surfaces and floor items
+                    </span>
+                    <span class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                      Store personal clothing, toys, loose paperwork, and scattered cables. Clear floor perimeters empower our technicians to focus directly on deep sanitization, vacuum edges, and steam cleaning.
+                    </span>
+                  </div>
+                </label>
+
+                <label class="group flex items-start gap-4 p-5 sm:p-6 hover:bg-surface-container-low/40 transition-colors cursor-pointer select-none">
+                  <input class="prep-check checklist-item mt-0.5" onchange="updateChecklistCount()" type="checkbox">
+                  <div class="flex flex-col gap-1">
+                    <span class="text-title-md font-title-md text-on-surface group-hover:text-secondary transition-colors">
+                      Secure pets in a comfortable designated area
+                    </span>
+                    <span class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                      Even friendly dogs and cats may become startled by high-powered HEPA vacuum motors and rotating door access. Ensure your companion is relaxed in a cozy kennel or quiet guest room.
+                    </span>
+                  </div>
+                </label>
+
+                <label class="group flex items-start gap-4 p-5 sm:p-6 hover:bg-surface-container-low/40 transition-colors cursor-pointer select-none">
+                  <input class="prep-check checklist-item mt-0.5" onchange="updateChecklistCount()" type="checkbox">
+                  <div class="flex flex-col gap-1">
+                    <span class="text-title-md font-title-md text-on-surface group-hover:text-secondary transition-colors">
+                      Identify delicate surfaces &amp; antique finishes
+                    </span>
+                    <span class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                      Note any unsealed honed travertine, raw oiled walnut, or fragile heirloom mirrors. Our specialists carry pH-neutral specialty unguents, but advance flagging guarantees maximum protection.
+                    </span>
+                  </div>
+                </label>
+
+                <label class="group flex items-start gap-4 p-5 sm:p-6 hover:bg-surface-container-low/40 transition-colors cursor-pointer select-none">
+                  <input class="prep-check checklist-item mt-0.5" onchange="updateChecklistCount()" type="checkbox">
+                  <div class="flex flex-col gap-1">
+                    <span class="text-title-md font-title-md text-on-surface group-hover:text-secondary transition-colors">
+                      Ensure keycode or lockbox access is active
+                    </span>
+                    <span class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                      If you will not be present, confirm digital keypad batteries, front gate bypass codes, or building concierge front-desk clearance 2 hours prior to our confirmed arrival window.
+                    </span>
+                  </div>
+                </label>
+
+                <label class="group flex items-start gap-4 p-5 sm:p-6 hover:bg-surface-container-low/40 transition-colors cursor-pointer select-none">
+                  <input class="prep-check checklist-item mt-0.5" onchange="updateChecklistCount()" type="checkbox">
+                  <div class="flex flex-col gap-1">
+                    <span class="text-title-md font-title-md text-on-surface group-hover:text-secondary transition-colors">
+                      Empty sinks of fragile handwash dishes
+                    </span>
+                    <span class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                      Clear basin areas so our team can scrub, descale, and polish your sink fixtures, backsplashes, and drainage surfaces with surgical thoroughness.
+                    </span>
+                  </div>
+                </label>
+
+              </div>
+
+              <div class="hidden px-5 sm:px-6 py-4 bg-secondary-fixed text-on-secondary-fixed border-t border-on-surface/[0.06] flex items-center justify-between gap-3" id="checklist-completion-banner">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[18px]">check_circle</span>
+                  <span class="text-title-md font-title-md">Your property is 100% prepped for deep care</span>
+                </div>
+                <span class="text-label-sm font-label-sm uppercase font-semibold tracking-wider">Ready for service</span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL INTEGRITY MOSAIC -->
+      <section class="w-full border-t border-on-surface/[0.06]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+            <div class="reveal flex flex-col bg-surface-container-low rounded-xl border border-on-surface/[0.06] p-6 gap-4">
+              <span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold">Microfiber system</span>
+              <h3 class="text-title-lg font-title-lg text-on-surface">Zero bacterial carryover</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                Unlike traditional rags that redistribute dust and germs between rooms, our microfiber denier weave splits fibers 200x thinner than a human hair, physically locking microscopic contaminants.
+              </p>
+              <div class="mt-auto pt-4 border-t border-on-surface/[0.06] flex items-center gap-2 text-on-surface">
+                <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+                <span class="text-title-md font-title-md tabular-nums">0.13 Denier fiber rating</span>
+              </div>
+            </div>
+
+            <div class="reveal relative rounded-xl overflow-hidden border border-on-surface/[0.06] min-h-[260px] bg-surface-container" style="transition-delay: 80ms;">
+              <img alt="Close up shot of professional cleaning gear, color coded labeled spray bottles with botanical liquids, neatly rolled teal and grey microfiber cloths on a stainless steel clean workstation." class="absolute inset-0 w-full h-full object-cover" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCATE52vFYDq2LhRXpem-BeC-5FEINbnqTtL7-2VQokVeFq7-xzvI5fW3DROfJg9rOJy3O1fSnbDch3HUOo14ArnC0sF4tIcfGIsIfrnpBi5-55gDYWMJU3NiiZP9iEAklx2msZ5YU5Jr-gNV5hfP2wvnDg1Vqmf2TrM02G9q5eclJzKSxbnYuBrWiHrYZHmerQGMtbJ5CsdiocAx0bAMaIRMFTobewOSRQy2OEIiYmX63x0vd-muqoTg">
+            </div>
+
+            <div class="reveal flex flex-col bg-surface-container-low rounded-xl border border-on-surface/[0.06] p-6 gap-4" style="transition-delay: 160ms;">
+              <span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold">Safety &amp; compliance</span>
+              <h3 class="text-title-lg font-title-lg text-on-surface">Bonded, screened &amp; insured</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                Every technician undergoes 7-year background checks, rigorous in-house laboratory trials, and works under comprehensive $2,000,000 general liability coverage for complete peace of mind.
+              </p>
+              <div class="mt-auto pt-4 border-t border-on-surface/[0.06] flex items-center gap-2 text-on-surface">
+                <span class="material-symbols-outlined text-secondary text-[18px]">shield</span>
+                <span class="text-title-md font-title-md tabular-nums">$2M commercial liability policy</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="w-full border-t border-on-surface/[0.06] bg-surface-container-low/40">
+        <div class="max-w-4xl mx-auto px-6 sm:px-8 py-20 sm:py-24">
+          <div class="reveal flex flex-col items-center text-center gap-4 mb-10">
+            <h2 class="text-[26px] sm:text-headline-lg font-headline-lg text-on-surface tracking-tight">Frequently asked questions</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-[52ch] text-pretty">
+              Transparent policies regarding products, access security, quality guarantees, and recurring care tiers.
+            </p>
+          </div>
+
+          <div class="reveal flex flex-wrap items-center justify-center gap-2 mb-8">
+            <button class="faq-filter-btn px-3.5 py-1.5 rounded-md text-label-sm font-label-sm text-surface bg-on-surface transition-all" data-category="all" onclick="filterFaq('all')" type="button">
+              All
+            </button>
+            <button class="faq-filter-btn px-3.5 py-1.5 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface bg-surface-container-lowest border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-all" data-category="products" onclick="filterFaq('products')" type="button">
+              Products &amp; equipment
+            </button>
+            <button class="faq-filter-btn px-3.5 py-1.5 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface bg-surface-container-lowest border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-all" data-category="logistics" onclick="filterFaq('logistics')" type="button">
+              Access &amp; security
+            </button>
+            <button class="faq-filter-btn px-3.5 py-1.5 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface bg-surface-container-lowest border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-all" data-category="pricing" onclick="filterFaq('pricing')" type="button">
+              Policies &amp; rates
+            </button>
+          </div>
+
+          <div class="flex flex-col gap-3" id="faq-list">
+
+            <div class="faq-card reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden" data-category="products">
+              <button aria-controls="faq-1" aria-expanded="false" class="w-full flex items-center justify-between p-5 sm:p-6 text-left focus-ring" onclick="toggleFaq(this)" type="button">
+                <div class="flex items-center gap-4">
+                  <span class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">eco</span>
+                  </span>
+                  <span class="text-title-lg font-title-lg text-on-surface">What cleaning products and solutions do you use?</span>
+                </div>
+                <span class="faq-indicator material-symbols-outlined text-[20px] text-on-surface-variant shrink-0 ml-4">expand_more</span>
+              </button>
+              <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6" id="faq-1">
+                <div class="pt-4 border-t border-on-surface/[0.06] text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  We exclusively utilize eco-friendly, non-toxic formulations certified by Green Seal and EPA Safer Choice. Our plant-derived enzyme detergents and citric-based mineral removers are thoroughly safe for households with young infants, sensitive elderly residents, and indoor pets. For delicate materials such as unsealed quartzite, honed limestone, and aged bronze, we apply custom neutral-pH formulas that clean without etching or degrading natural sealers.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-card reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden" data-category="logistics" style="transition-delay: 60ms;">
+              <button aria-controls="faq-2" aria-expanded="false" class="w-full flex items-center justify-between p-5 sm:p-6 text-left focus-ring" onclick="toggleFaq(this)" type="button">
+                <div class="flex items-center gap-4">
+                  <span class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">key</span>
+                  </span>
+                  <span class="text-title-lg font-title-lg text-on-surface">Do I need to be present during the appointment?</span>
+                </div>
+                <span class="faq-indicator material-symbols-outlined text-[20px] text-on-surface-variant shrink-0 ml-4">expand_more</span>
+              </button>
+              <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6" id="faq-2">
+                <div class="pt-4 border-t border-on-surface/[0.06] text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  No presence is required. Over 75% of our residential and commercial clients prefer our vetted secure access protocol. You may provide a temporary electronic keycode, leave a key in an on-site lockbox, or authorize front-desk concierge access. Our team members check in and check out via digital GPS geofencing, providing you with real-time text notifications when our crew enters and locks your residence upon departure.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-card reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden" data-category="pricing" style="transition-delay: 120ms;">
+              <button aria-controls="faq-3" aria-expanded="false" class="w-full flex items-center justify-between p-5 sm:p-6 text-left focus-ring" onclick="toggleFaq(this)" type="button">
+                <div class="flex items-center gap-4">
+                  <span class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">published_with_changes</span>
+                  </span>
+                  <span class="text-title-lg font-title-lg text-on-surface">What is your 24-hour satisfaction revisit policy?</span>
+                </div>
+                <span class="faq-indicator material-symbols-outlined text-[20px] text-on-surface-variant shrink-0 ml-4">expand_more</span>
+              </button>
+              <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6" id="faq-3">
+                <div class="pt-4 border-t border-on-surface/[0.06] text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  Our work is backed by our absolute Pristine Standard. If any corner, baseboard, or fixture fails to meet the strict standards outlined in our 35-point supervisory checklist, simply take a photo and contact our dispatch desk within 24 hours. A supervisor will return to your property within one business day to reclean and detail the affected area completely free of charge.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-card reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden" data-category="pricing" style="transition-delay: 180ms;">
+              <button aria-controls="faq-4" aria-expanded="false" class="w-full flex items-center justify-between p-5 sm:p-6 text-left focus-ring" onclick="toggleFaq(this)" type="button">
+                <div class="flex items-center gap-4">
+                  <span class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">percent</span>
+                  </span>
+                  <span class="text-title-lg font-title-lg text-on-surface">How do recurring discounts work?</span>
+                </div>
+                <span class="faq-indicator material-symbols-outlined text-[20px] text-on-surface-variant shrink-0 ml-4">expand_more</span>
+              </button>
+              <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6" id="faq-4">
+                <div class="pt-4 border-t border-on-surface/[0.06] text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  <p>To reward continuous maintenance schedules, we offer structured illustrative frequency tier savings:</p>
+                  <ul class="mt-3 flex flex-col gap-2">
+                    <li class="flex items-start gap-2.5">
+                      <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+                      <span><strong class="text-on-surface font-semibold">Weekly cadence:</strong> up to 20% illustrative discount off standard single-visit rates.</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+                      <span><strong class="text-on-surface font-semibold">Bi-weekly cadence:</strong> 15% illustrative discount, ideal for busy active households.</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+                      <span><strong class="text-on-surface font-semibold">Monthly cadence:</strong> 10% illustrative discount for foundational deep reset maintenance.</span>
+                    </li>
+                  </ul>
+                  <p class="mt-3 text-on-surface-variant">
+                    <em>Note: As this is a demo environment by Falalu Creative Studio, rates and discounts are demonstrative.</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-card reveal bg-surface-container-lowest rounded-xl border border-on-surface/[0.06] overflow-hidden" data-category="products" style="transition-delay: 240ms;">
+              <button aria-controls="faq-5" aria-expanded="false" class="w-full flex items-center justify-between p-5 sm:p-6 text-left focus-ring" onclick="toggleFaq(this)" type="button">
+                <div class="flex items-center gap-4">
+                  <span class="w-9 h-9 rounded-md bg-surface-container flex items-center justify-center text-secondary shrink-0">
+                    <span class="material-symbols-outlined text-[18px]">cleaning_services</span>
+                  </span>
+                  <span class="text-title-lg font-title-lg text-on-surface">How do you handle supplies and equipment?</span>
+                </div>
+                <span class="faq-indicator material-symbols-outlined text-[20px] text-on-surface-variant shrink-0 ml-4">expand_more</span>
+              </button>
+              <div class="faq-content hidden px-5 sm:px-6 pb-5 sm:pb-6" id="faq-5">
+                <div class="pt-4 border-t border-on-surface/[0.06] text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  Pristine Works arrives fully self-sufficient. Our crew brings commercial-grade 4-stage HEPA back-pack vacuums, non-abrasive telescopic poles, fresh color-coded microfiber bundles, hospital-grade steam tools, and specialized botanical solutions. You never have to restock sprays, mop pads, or vacuum bags. If you prefer us to utilize your personal vacuum or specific specialized stone wax, our team is pleased to accommodate your exact preference.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- STUDIO CREDIT -->
+      <section class="w-full border-t border-on-surface/[0.06]">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16">
+          <div class="reveal flex flex-col md:flex-row items-start md:items-center justify-between gap-6 p-6 sm:p-8 rounded-xl bg-surface-container-lowest border border-on-surface/[0.06]">
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-md bg-on-surface text-surface flex items-center justify-center font-bold text-headline-md shrink-0">
+                F
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="text-label-sm font-label-sm uppercase tracking-widest text-secondary font-semibold">Demo notice</span>
+                <p class="text-body-md font-body-md text-on-surface font-medium">
+                  Pristine Works is an interactive concept showcase designed by <span class="text-secondary font-semibold">Falalu Creative Studio</span>.
+                </p>
+                <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty">
+                  Created to demonstrate architectural visual structure, systematic hospitality workflows, and high-conversion UX for premium service operations.
+                </p>
+              </div>
+            </div>
+            <a class="inline-flex items-center gap-1.5 h-10 px-5 rounded-md bg-surface-container text-on-surface text-title-md font-title-md border border-on-surface/[0.06] hover:bg-surface-container-high transition-colors shrink-0" data-path="all-services" href="#">
+              <span class="material-symbols-outlined text-[16px]">view_list</span>
+              Explore services
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BAND -->
+      <section class="w-full border-t border-on-surface/[0.06] bg-surface-container-low/50">
+        <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
+          <div class="reveal flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+            <div class="flex flex-col gap-3 max-w-[52ch]">
+              <h2 class="text-[24px] sm:text-[28px] font-headline-md text-on-surface tracking-tight text-balance">
+                Have a specific question not covered here?
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant text-pretty">
+                Every building, estate, and corporate floorplan holds distinct priorities. Speak directly with a client coordinator for bespoke scheduling, customized checklists, or walk-through estimates.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 shrink-0">
+              <a class="inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-md bg-on-surface text-surface text-title-md font-title-md hover:bg-on-surface/90 transition-colors focus-ring" data-path="contact-and-quote" href="#">
+                <span class="material-symbols-outlined text-[16px]">forum</span>
+                Speak with our team
+              </a>
+              <a class="inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-md bg-surface text-on-surface text-title-md font-title-md border border-on-surface/[0.12] hover:bg-surface-container-low hover:border-on-surface/[0.18] transition-colors focus-ring" data-path="contact-and-quote" href="#">
+                <span class="material-symbols-outlined text-[16px]">calculate</span>
+                Instant estimate
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full border-t border-on-surface/[0.06]">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2.5">
+            <img alt="Pristine Works Logo" class="h-7 w-7 rounded-md object-contain" loading="lazy" decoding="async" src="https://lh3.googleusercontent.com/aida/AEtjO1X7ReB7jhx-DtCL2RwaZmfEKGvt0mPsxHTKrXwYNYYTzCD7xit1G2UUOXPZryKnZ_gjVJLdLomipnc7P5scW4Fx64yplA0hjsRGN1AtP1qi5TZU0sZH_bW437-zWUUCvkPzVqg65Pk8BWaSkofO_PbW_Bl1xF-GkmKFm0NgZyNTNik6J7WS-pCqC-CD5RiKwd6np84CZg-XzfzqSPrhND3rl74z-tq0sXbBcp15FbzKEyWazeT-ZRYxvr5P">
+            <span class="text-title-md font-title-md text-on-surface">Pristine Works</span>
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant text-pretty max-w-[42ch]">Architectural-grade cleaning precision creating calm, orderly, and hygienic environments for residences and corporate facilities.</p>
+          <span class="text-label-sm font-label-sm text-on-surface-variant/70">A demo by Falalu Creative Studio. Fictional business concept.</span>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Services</h4>
+          <div class="flex flex-col gap-2.5">
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Recurring home</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Deep clean</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="residential" href="#">Move in / move out</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="commercial" href="#">Office facilities</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="commercial" href="#">Retail &amp; showrooms</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Resources</h4>
+          <div class="flex flex-col gap-2.5">
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="all-services" href="#">Preparation checklist</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="about-and-faqs" href="#">Our process</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="contact-and-quote" href="#">Sample rates &amp; tiers</a>
+            <a class="text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface transition-colors w-fit" data-path="about-and-faqs" href="#">Frequently asked questions</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3.5">
+          <h4 class="text-label-md font-label-md uppercase text-on-surface-variant/70">Contact</h4>
+          <div class="flex flex-col gap-3 text-body-sm font-body-sm">
+            <div class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px] mt-0.5">location_on</span>
+              <span class="text-on-surface-variant">100 Cleanworks Blvd, Suite 400, Metro City</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">mail</span>
+              <span class="text-on-surface-variant">hello@pristineworks-demo.com</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">call</span>
+              <span class="text-on-surface-variant tabular-nums">(555) 019-2834</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-on-surface-variant text-[16px]">schedule</span>
+              <span class="text-on-surface-variant">Mon – Sat · 7:00 AM – 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-14 pt-6 border-t border-on-surface/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <p class="text-label-sm font-label-sm text-on-surface-variant">© 2025 Pristine Works. Sample pricing and details are illustrative. Demo project by Falalu Creative Studio.</p>
+        <div class="flex items-center gap-6 text-label-sm font-label-sm text-on-surface-variant">
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Privacy policy</a>
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Terms of service</a>
+          <a class="hover:text-on-surface transition-colors" data-path="about-and-faqs" href="#">Hygiene standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js-enabled');
+
+      var revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.10, rootMargin: '0px 0px -60px 0px' });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+      }
+
+      var btn = document.getElementById('mobile-menu-btn');
+      var panel = document.getElementById('mobile-nav');
+      var icon = document.getElementById('mobile-menu-icon');
+      if (btn && panel) {
+        var closeMenu = function () {
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open menu');
+          if (icon) icon.textContent = 'menu';
+        };
+        var openMenu = function () {
+          panel.classList.remove('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.setAttribute('aria-label', 'Close menu');
+          if (icon) icon.textContent = 'close';
+        };
+        btn.addEventListener('click', function () {
+          if (panel.classList.contains('hidden')) openMenu();
+          else closeMenu();
+        });
+        panel.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', closeMenu);
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeMenu();
+        });
+        window.addEventListener('resize', function () {
+          if (window.innerWidth >= 1024) closeMenu();
+        });
+      }
+    })();
+
+    function toggleFaq(btn) {
+      var card = btn.closest('.faq-card');
+      var content = card.querySelector('.faq-content');
+      var indicator = card.querySelector('.faq-indicator');
+      var isHidden = content.classList.contains('hidden');
+
+      document.querySelectorAll('.faq-content').forEach(function (el) {
+        if (!el.classList.contains('hidden') && el !== content) {
+          el.classList.add('hidden');
+          var parentCard = el.closest('.faq-card');
+          var otherBtn = parentCard.querySelector('button');
+          var otherInd = parentCard.querySelector('.faq-indicator');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          if (otherInd) otherInd.textContent = 'expand_more';
+        }
+      });
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        indicator.textContent = 'expand_less';
+        btn.setAttribute('aria-expanded', 'true');
+      } else {
+        content.classList.add('hidden');
+        indicator.textContent = 'expand_more';
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    function filterFaq(category) {
+      var buttons = document.querySelectorAll('.faq-filter-btn');
+      var activeCls = 'faq-filter-btn px-3.5 py-1.5 rounded-md text-label-sm font-label-sm text-surface bg-on-surface transition-all';
+      var inactiveCls = 'faq-filter-btn px-3.5 py-1.5 rounded-md text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface bg-surface-container-lowest border border-on-surface/[0.06] hover:border-on-surface/[0.14] transition-all';
+      buttons.forEach(function (btn) {
+        if (btn.getAttribute('data-category') === category) btn.className = activeCls;
+        else btn.className = inactiveCls;
+      });
+
+      var cards = document.querySelectorAll('.faq-card');
+      cards.forEach(function (card) {
+        var cat = card.getAttribute('data-category');
+        if (category === 'all' || cat === category) card.classList.remove('hidden');
+        else card.classList.add('hidden');
+      });
+    }
+
+    function updateChecklistCount() {
+      var total = document.querySelectorAll('.checklist-item').length;
+      var checked = document.querySelectorAll('.checklist-item:checked').length;
+      var progressEl = document.getElementById('checklist-progress');
+      var banner = document.getElementById('checklist-completion-banner');
+      if (progressEl) progressEl.textContent = checked + ' of ' + total;
+      if (banner) {
+        if (checked === total) banner.classList.remove('hidden');
+        else banner.classList.add('hidden');
+      }
+    }
+
+    function handleDownloadMock() {
+      var feedback = document.getElementById('download-feedback');
+      var btn = document.getElementById('download-btn');
+      if (feedback && btn) {
+        feedback.classList.remove('opacity-0');
+        btn.classList.add('opacity-70');
+        setTimeout(function () {
+          feedback.classList.add('opacity-0');
+          btn.classList.remove('opacity-70');
+        }, 3500);
+      }
+    }
+  </script>
+</body>
+  </html>
